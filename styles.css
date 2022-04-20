@@ -1,0 +1,59 @@
+* {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#nav-bar-btn {
+  border: none;
+}
+
+#nav-bar-p {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #28352F;
+}
+
+.heading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  height: 750px;
+  background-image: url('images/header-illsutration-mobile@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-heading {
+  font-weight: bold;
+  font-size: 3.4rem;
+  color: #172B4D;
+}
+
+#main-heading strong {
+  color: #36B37F;
+}
+
+.heading-section p {
+  color: #172B4D;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#icons-div img{
+  padding: 1rem;
+}
