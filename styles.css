@@ -18,7 +18,7 @@
 }
 
 #nav-bar-p {
-  font-family: 'Inter';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
   color: #28352f;
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  font-family: 'Inter';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   height: 750px;
   background-image: url('images/header-illsutration-mobile@2x.png');
@@ -41,15 +41,15 @@
 #main-heading {
   font-weight: bold;
   font-size: 3.4rem;
-  color: #172B4d;
+  color: #172b4d;
 }
 
 #main-heading strong {
-  color: #36B37f;
+  color: #36b37f;
 }
 
 .heading-section p {
-  color: #172B4d;
+  color: #172b4d;
   font-weight: 400;
   font-size: 2rem;
 }
