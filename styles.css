@@ -1,5 +1,5 @@
 * {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@
   font-family: 'Inter';
   font-weight: 600;
   font-size: 1.7rem;
-  color: #28352F;
+  color: #28352f;
 }
 
 .heading-section {
@@ -41,19 +41,19 @@
 #main-heading {
   font-weight: bold;
   font-size: 3.4rem;
-  color: #172B4D;
+  color: #172B4d;
 }
 
 #main-heading strong {
-  color: #36B37F;
+  color: #36B37f;
 }
 
 .heading-section p {
-  color: #172B4D;
+  color: #172B4d;
   font-weight: 400;
   font-size: 2rem;
 }
 
-#icons-div img{
+#icons-div img {
   padding: 1rem;
 }
