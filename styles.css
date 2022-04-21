@@ -54,6 +54,11 @@
   font-size: 2rem;
 }
 
+#icons-div {
+  display: flex;
+  list-style: none;
+}
+
 #icons-div img {
   padding: 1rem;
 }
