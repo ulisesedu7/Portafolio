@@ -1,3 +1,7 @@
+/*
+Feature 1 Styles Section
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -83,9 +87,21 @@
   background-color: transparent;
 }
 
+/*
+Feature 2 Styles Section
+*/
+#arrow-btn {
+  padding: 8px;
+}
+
 .works-section {
   display: grid;
   grid-template-rows: auto;
+  text-align: center;
+}
+
+#about-me-article {
+  text-align: center;
 }
 
 .headings-2 {
@@ -98,8 +114,52 @@
   margin: 24px 0;
 }
 
+#border-line {
+  width: 48px;
+  height: 4px;
+  background: #36B37E;
+  border-radius: 24px;
+  margin: 24px 0;
+}
+
 .work-card {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+}
+
+.work-card h3 {
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 16px 0;
+  color: #3a4a42;
+}
+
+.main-button {
+  background-color: #36b37f;
+  border-color: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  padding: 12px;
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 24px 0;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+#about-me-article p{
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin: 24px 0;
 }
