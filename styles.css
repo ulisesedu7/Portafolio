@@ -39,8 +39,9 @@
 }
 
 #main-heading {
-  font-weight: bold;
-  font-size: 3.4rem;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   color: #172b4d;
 }
 
@@ -51,7 +52,8 @@
 .heading-section p {
   color: #172b4d;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 #icons-div {
