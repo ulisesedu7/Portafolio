@@ -36,8 +36,10 @@
   font-style: normal;
   background-image: url('images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 64px 24px;
+  height: 600px;
+  width: fit-content;
 }
 
 #main-heading {
