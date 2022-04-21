@@ -1,5 +1,4 @@
 * {
-  background-color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -15,6 +14,7 @@
 
 #nav-bar-btn {
   border: none;
+  background-color: #fff;
 }
 
 #nav-bar-a {
@@ -83,3 +83,23 @@
   background-color: transparent;
 }
 
+.works-section {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.headings-2 {
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 24px 0;
+}
+
+.work-card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
