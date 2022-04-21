@@ -64,7 +64,9 @@
   order: 1;
 }
 
-#main-heading,#main-heading strong,.heading-section p {
+#main-heading,
+#main-heading strong,
+.heading-section p {
   background-color: transparent;
 }
 
