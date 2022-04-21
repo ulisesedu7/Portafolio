@@ -7,21 +7,23 @@
 .nav-list {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   list-style: none;
-  padding: 1rem;
-  margin: 1rem;
+  text-align: center;
+  padding: 8px;
 }
 
 #nav-bar-btn {
   border: none;
 }
 
-#nav-bar-p {
+#nav-bar-a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 20px;
+  line-height: 28px;
   color: #28352f;
+  padding: 10px 12px;
 }
 
 .heading-section {
@@ -32,7 +34,7 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  height: 750px;
+  height: 648px;
   background-image: url('images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,6 +45,8 @@
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin: 58px 0px;
+  order: 0;
 }
 
 #main-heading strong {
@@ -54,11 +58,15 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+  margin: 58px 0px;
+  order: 1;
 }
 
 #icons-div {
   display: flex;
   list-style: none;
+  order: 2;
+  margin: 58px 0px;
 }
 
 #icons-div img {
