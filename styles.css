@@ -34,10 +34,10 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  height: 648px;
   background-image: url('images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  padding: 64px 24px;
 }
 
 #main-heading {
@@ -62,6 +62,10 @@
   order: 1;
 }
 
+#main-heading, #main-heading strong, .heading-section p {
+  background-color: transparent;
+}
+
 #icons-div {
   display: flex;
   list-style: none;
@@ -71,4 +75,5 @@
 
 #icons-div img {
   padding: 1rem;
+  background-color: transparent;
 }
