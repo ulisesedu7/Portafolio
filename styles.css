@@ -82,6 +82,15 @@ Feature 1 Styles Section
   margin: 58px 0;
 }
 
+/*
+According to linters this should be placed here
+*/
+.aboutme-card img {
+  height: 80px;
+  width: 80px;
+  margin: 40px auto;
+}
+
 #icons-div img {
   padding: 1rem;
   background-color: transparent;
@@ -202,7 +211,6 @@ Feature 2 Styles Section
   text-align: center;
   row-gap: 24px;
   justify-items: center;
-  text-align: center;
 }
 
 #about-me-article p {
@@ -225,12 +233,6 @@ Feature 2 Styles Section
   box-sizing: border-box;
   height: 352px;
   width: 327px;
-}
-
-.aboutme-card img {
-  height: 80px;
-  width: 80px;
-  margin: 40px auto;
 }
 
 .aboutme-card h4 {
