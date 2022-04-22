@@ -5,6 +5,7 @@ Feature 1 Styles Section
 * {
   margin: 0;
   padding: 0;
+  /* background-color: #fff; */
 }
 
 .nav-list {
@@ -96,8 +97,10 @@ Feature 2 Styles Section
 
 .works-section {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 8;
   text-align: center;
+  row-gap: 24px;
+  justify-items: center;
 }
 
 #about-me-article {
@@ -119,10 +122,13 @@ Feature 2 Styles Section
   height: 4px;
   background: #36B37E;
   border-radius: 24px;
-  margin: 24px 0;
+  margin: 24px auto;
+  
 }
 
 .work-card {
+  display: flex;
+  flex-direction: row;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
@@ -130,6 +136,11 @@ Feature 2 Styles Section
   background-repeat: no-repeat;
   height: 474px;
   width: 327px;
+}
+
+.work-card-content ul {
+  display: flex;
+  align-items: center;
 }
 
 .card-work-item {
@@ -145,11 +156,12 @@ Feature 2 Styles Section
   border: 1px solid transparent;
   border-radius: 4px;
   width: fit-content;
-  margin: 0 8px;
+  margin: 0 4px;
   list-style: none;
 }
 
 .work-card-content {
+  align-self: flex-end;
   height: 252px;
   background-color: #fff;
   border: 1px solid transparent;
@@ -183,6 +195,21 @@ Feature 2 Styles Section
   letter-spacing: 0.03em;
 }
 
+.main-button:hover {
+  background-color: #2d996c;
+}
+
+.main-button:active {
+  background-color: #008552;
+}
+
+#about-me-article {
+  display: grid;
+  text-align: center;
+  row-gap: 24px;
+  justify-items: center;
+}
+
 #about-me-article p{
   font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
@@ -190,16 +217,25 @@ Feature 2 Styles Section
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
-  margin: 24px 0;
+  margin: 24px;
 }
 
 .aboutme-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   box-sizing: border-box;
   height: 352px;
   width: 327px;
+}
+
+.aboutme-card img {
+  height: 80px;
+  width: 80px;
+  margin: 40px auto;
 }
 
 .aboutme-card h4 {
@@ -210,6 +246,13 @@ Feature 2 Styles Section
   line-height: 32px;
   color: #344563;
   margin: 24px 0;
+}
+
+.aboutme-card ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-list-item {
@@ -225,6 +268,6 @@ Feature 2 Styles Section
   border: 1px solid transparent;
   border-radius: 8px;
   width: fit-content;
-  margin: 0 8px;
+  margin: 8px;
   list-style: none;
 }
