@@ -5,7 +5,6 @@ Feature 1 Styles Section
 * {
   margin: 0;
   padding: 0;
-  /* background-color: #fff; */
 }
 
 .nav-list {
@@ -103,10 +102,6 @@ Feature 2 Styles Section
   justify-items: center;
 }
 
-#about-me-article {
-  text-align: center;
-}
-
 .headings-2 {
   font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
@@ -120,10 +115,9 @@ Feature 2 Styles Section
 #border-line {
   width: 48px;
   height: 4px;
-  background: #36B37E;
+  background: #36b37e;
   border-radius: 24px;
   margin: 24px auto;
-  
 }
 
 .work-card {
@@ -165,7 +159,7 @@ Feature 2 Styles Section
   height: 252px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius:8px;
+  border-radius: 8px;
   padding: 16px;
 }
 
@@ -208,9 +202,10 @@ Feature 2 Styles Section
   text-align: center;
   row-gap: 24px;
   justify-items: center;
+  text-align: center;
 }
 
-#about-me-article p{
+#about-me-article p {
   font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
