@@ -7,12 +7,11 @@ Feature 1 Styles Section
   padding: 0;
   font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
-
 }
 
-/* 
+/*
 Items with Display Flex
-*/ 
+*/
 .display-flex {
   display: flex;
 }
@@ -207,9 +206,9 @@ Feature 2 Styles Section
   justify-items: center;
   background-image: url('images/aboutme-background.png'), url('images/aboutme-background2.png');
   background-repeat: no-repeat;
-  background-position: 
-  top left,
-  top right;
+  background-position:
+    top left,
+    top right;
 }
 
 #about-me-article p {
