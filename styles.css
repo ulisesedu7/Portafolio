@@ -258,3 +258,70 @@ Feature 2 Styles Section
   margin: 8px;
   list-style: none;
 }
+
+/*
+Feature 3 Styles 
+*/
+#form-section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#form-section h2 {
+  order: 0;
+  margin: 24px;
+}
+
+#main-form {
+  flex-direction: column;
+  order: 1;
+  gap: 24px;
+  align-items: center;
+}
+
+#main-form input {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#main-form textarea {
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 327px;
+  height: 114px;
+}
+
+#form-btn {
+  width: fit-content;
+}
+
+#icons-form {
+  list-style: none;
+  order: 2;
+  margin: 58px 0;
+}
+
+#icons-form img {
+  padding: 1rem;
+  background-color: transparent;
+}
+
+footer {
+  text-align: center;
+}
+
+#contact-me-email {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
