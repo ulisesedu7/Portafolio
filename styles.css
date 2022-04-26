@@ -266,11 +266,15 @@ Feature 3 Styles
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: url('images/form-background.png');
+  background-repeat: no-repeat;
+  background-position: bottom 50px right;
+  padding: 64px 24px 0;
 }
 
 #form-section h2 {
   order: 0;
-  margin: 24px;
+  margin: 24px 0;
 }
 
 #main-form {
@@ -278,6 +282,7 @@ Feature 3 Styles
   order: 1;
   gap: 24px;
   align-items: center;
+  margin-top: 58px;
 }
 
 #main-form input {
@@ -290,6 +295,7 @@ Feature 3 Styles
   font-size: 15px;
   line-height: 24px;
   color: #6b778c;
+  padding: 15px 16px;
 }
 
 #main-form textarea {
@@ -298,6 +304,11 @@ Feature 3 Styles
   border-radius: 4px;
   width: 327px;
   height: 114px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  padding: 15px 16px;
 }
 
 #form-btn {
@@ -307,11 +318,11 @@ Feature 3 Styles
 #icons-form {
   list-style: none;
   order: 2;
-  margin: 58px 0;
+  margin-top: 46px;
 }
 
 #icons-form img {
-  padding: 1rem;
+  padding: 20px;
   background-color: transparent;
 }
 
