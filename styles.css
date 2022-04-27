@@ -45,7 +45,7 @@ Items with Display Flex
   text-align: center;
   background-image: url('images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   padding: 64px 24px;
   height: 600px;
   width: fit-content;
@@ -335,4 +335,19 @@ footer {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
+}
+
+/*
+Desktop Version styles
+*/
+@media screen and (min-width: 768px) {
+  #first-container {
+    background-image: url('images/Header-llustration-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .heading-section {
+    background-image: none;
+  }
 }
