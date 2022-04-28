@@ -29,7 +29,7 @@ Items with Display Flex
   background-color: #fff;
 }
 
-#nav-bar-a {
+.nav-bar-a {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -336,9 +336,15 @@ footer {
   line-height: 32px;
   color: #42526e;
 }
+/*
+Desktop hidden stuff 
+*/
+#desktop-header {
+  display: none;
+}
 
 /*
-Desktop Version styles
+Desktop Media Query styles
 */
 @media screen and (min-width: 768px) {
   #first-container {
@@ -350,4 +356,36 @@ Desktop Version styles
   .heading-section {
     background-image: none;
   }
+
+  #mobile-header {
+    display: none;
+  }
+
+  #desktop-header {
+    display: block;
+  }
+
+  #desktop-header .nav-list {
+    justify-content: center;
+  }
+
+  #desktop-header .nav-bar-a {
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin: 0 10px;
+  }
+
+  #main-heading {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+    margin: 24px 0;
+  }
+
+  .heading-section p {
+    line-height: 32px;
+  } 
 }
