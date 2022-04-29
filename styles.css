@@ -412,7 +412,7 @@ Desktop Media Query styles
   .title-card {
     grid-area: header1;
   }
-  
+
   #about-me-article {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
