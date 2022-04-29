@@ -433,4 +433,17 @@ Desktop Media Query styles
   #about-me-article button {
     grid-area: btn;
   }
+
+  #form-section {
+    display: grid;
+    grid-template-columns: 33% 77%;
+  }
+
+  #form-section h2 {
+    font-size: 30px;
+  }
+
+  footer {
+    display: none;
+  }
 }
