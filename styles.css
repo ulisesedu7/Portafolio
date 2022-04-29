@@ -29,7 +29,7 @@ Items with Display Flex
   background-color: #fff;
 }
 
-#nav-bar-a {
+.nav-bar-a {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -45,7 +45,7 @@ Items with Display Flex
   text-align: center;
   background-image: url('images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   padding: 64px 24px;
   height: 600px;
   width: fit-content;
@@ -189,6 +189,9 @@ Feature 2 Styles Section
   margin: 24px 0;
   color: #fff;
   letter-spacing: 0.03em;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .main-button:hover {
@@ -315,13 +318,15 @@ Feature 3 Styles
   width: fit-content;
 }
 
-#icons-form {
+#icons-form-mobile,
+#icons-form-desktop {
   list-style: none;
   order: 2;
   margin-top: 46px;
 }
 
-#icons-form img {
+#icons-form-mobile img,
+#icons-form-desktop img {
   padding: 20px;
   background-color: transparent;
 }
@@ -335,4 +340,158 @@ footer {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
+}
+
+/*
+Desktop hidden stuff
+*/
+#desktop-header {
+  display: none;
+}
+
+#icons-form-desktop {
+  display: none;
+}
+
+/*
+Desktop Media Query styles
+*/
+@media screen and (min-width: 768px) {
+  #first-container {
+    background-image: url('images/Header-llustration-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .heading-section {
+    background-image: none;
+  }
+
+  #mobile-header {
+    display: none;
+  }
+
+  #desktop-header {
+    display: block;
+  }
+
+  #desktop-header .nav-list {
+    justify-content: center;
+  }
+
+  #desktop-header .nav-bar-a {
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin: 0 10px;
+  }
+
+  #main-heading {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+    margin: 24px 0;
+  }
+
+  .heading-section p {
+    line-height: 32px;
+  }
+
+  .works-section {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+      "arrow arrow arrow"
+      "header1 header1 header1";
+    align-items: center;
+    justify-content: center;
+  }
+
+  #arrow-btn {
+    grid-area: arrow;
+  }
+
+  .title-card {
+    grid-area: header1;
+  }
+
+  #about-me-article {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+      "h2 h2 h2"
+      "articlep articlep articlep"
+      "btn btn btn";
+    align-items: center;
+    justify-content: center;
+    padding-top: 192px;
+    background-image: url('images/about-me-desktop-bg2.png'), url('images/about-me-desktop-bg1.png');
+    background-repeat: no-repeat;
+    background-position:
+      top 380px left,
+      top 50px right;
+  }
+
+  #about-me-article h2 {
+    grid-area: h2;
+  }
+
+  #about-me-article p {
+    grid-area: articlep;
+  }
+
+  #about-me-article button {
+    grid-area: btn;
+  }
+
+  #form-section {
+    flex-direction: row;
+    background-image: url('images/form-bg1.png'), url('images/form-bg2.png'), url('images/form-bg3.png');
+    background-position:
+      bottom -50px left,
+      bottom right,
+      bottom left 20rem;
+    background-repeat: no-repeat;
+  }
+
+  #form-section h2 {
+    font-size: 30px;
+    order: 0;
+  }
+
+  .desktop-input {
+    display: block;
+  }
+
+  #main-form {
+    position: relative;
+    order: 0;
+  }
+
+  #main-form input {
+    width: 684px;
+    height: 48px;
+  }
+
+  #main-form textarea {
+    height: 114px;
+    width: 684px;
+  }
+
+  #form-btn {
+    align-self: flex-start;
+  }
+
+  #icons-form-mobile {
+    display: none;
+  }
+
+  #icons-form-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    display: none;
+  }
 }

@@ -10,11 +10,23 @@
 
 </head>
 <body>
-  <header>
+
+  <div id="first-container">
+  <header id="mobile-header">
     <nav>
       <ul class="nav-list display-flex">
-        <li><a id="nav-bar-a" href="">Welcome</a></li>
+        <li><a class="nav-bar-a" href="">Welcome</a></li>
         <li><button type="button" id="nav-bar-btn"><img src="images/icon-menu.png" alt="A hamburguer icon" width="35" height="35"></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header id="desktop-header">
+    <nav>
+      <ul class="nav-list display-flex">
+        <li><a class="nav-bar-a" href="#">Portafolio</a></li>
+        <li><a class="nav-bar-a" href="#">About</a></li>
+        <li><a class="nav-bar-a" href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -33,6 +45,7 @@
     </ul>
 
   </section>
+  </div>
 
   <section class="works-section">
     <a id="arrow-btn"><img src="images/Disabled.png" alt="tiny arrow"></a>
@@ -169,12 +182,12 @@
 
     <form id="main-form" class="display-flex" action="https://formspree.io/f/mrgjoqeg" method="post">
       <input type="text" placeholder="Full name" name="name" maxlength="30" required>
-      <input type="email" placeholder="Email" name="email" required>
+      <input id="email-form" type="email" placeholder="Email" name="email" required>
       <textarea name="user-message" maxlength="500" placeholder="Enter text here" required></textarea>
       <button type="submit" class="main-button" id="form-btn">Get in touch</button>
     </form>
 
-    <ul id="icons-form" class="display-flex">
+    <ul id="icons-form-mobile" class="display-flex">
       <li><a><img src="images/twitter.png" alt="twitter icon"></a></li>
       <li><a><img src="images/linkedin-icon.png" alt="linkedin icon"></a></li>
       <li><a><img src="images/medium.png" alt="A big M icon"></a></li>
@@ -183,6 +196,14 @@
     </ul>
 
   </section>
+  
+  <ul id="icons-form-desktop" class="display-flex">
+    <li><a><img src="images/twitter.png" alt="twitter icon"></a></li>
+    <li><a><img src="images/linkedin-icon.png" alt="linkedin icon"></a></li>
+    <li><a><img src="images/medium.png" alt="A big M icon"></a></li>
+    <li><a><img src="images/github.png" alt="github icon"></a></li>
+    <li><a><img src="images/angellist.png" alt="two tumbs up icon"></a></li>
+  </ul>
 
   <footer>
     <a id="contact-me-email">ulisesedu7@gmail.com</a>
