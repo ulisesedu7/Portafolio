@@ -189,6 +189,9 @@ Feature 2 Styles Section
   margin: 24px 0;
   color: #fff;
   letter-spacing: 0.03em;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 2s;
 }
 
 .main-button:hover {
