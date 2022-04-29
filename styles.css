@@ -315,13 +315,15 @@ Feature 3 Styles
   width: fit-content;
 }
 
-#icons-form {
+#icons-form-mobile,
+#icons-form-desktop {
   list-style: none;
   order: 2;
   margin-top: 46px;
 }
 
-#icons-form img {
+#icons-form-mobile img,
+#icons-form-desktop img {
   padding: 20px;
   background-color: transparent;
 }
@@ -343,6 +345,9 @@ Desktop hidden stuff
   display: none;
 }
 
+#icons-form-desktop {
+  display: none;
+}
 /*
 Desktop Media Query styles
 */
@@ -435,12 +440,50 @@ Desktop Media Query styles
   }
 
   #form-section {
-    display: grid;
-    grid-template-columns: 33% 77%;
+    flex-direction: row;
+    background-image: url('images/form-bg1.png'), url('images/form-bg2.png'), url('images/form-bg3.png');
+    background-position:
+      bottom -50px left,
+      bottom right,
+      bottom left 20rem;
+    background-repeat: no-repeat;
   }
 
   #form-section h2 {
     font-size: 30px;
+    order: 0;
+  }
+
+  .desktop-input {
+    display: block;
+  }
+
+  #main-form {
+    position: relative;
+    order: 0;
+  }
+
+  #main-form input {
+    width: 684px;
+    height: 48px;
+  }
+
+  #main-form textarea {
+    height: 114px;
+    width: 684px;
+  }
+
+  #form-btn {
+    align-self: flex-start;
+  }
+
+  #icons-form-mobile {
+    display: none;
+  }
+
+  #icons-form-desktop {
+    display: flex;
+    justify-content: center;
   }
 
   footer {
