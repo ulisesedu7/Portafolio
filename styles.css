@@ -191,7 +191,7 @@ Feature 2 Styles Section
   letter-spacing: 0.03em;
   transition-property: background-color;
   transition-duration: 0.5s;
-  transition-delay: 2s;
+  transition-delay: 0.1s;
 }
 
 .main-button:hover {
