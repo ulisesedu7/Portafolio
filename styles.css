@@ -338,8 +338,9 @@ footer {
   line-height: 32px;
   color: #42526e;
 }
+
 /*
-Desktop hidden stuff 
+Desktop hidden stuff
 */
 #desktop-header {
   display: none;
@@ -348,6 +349,7 @@ Desktop hidden stuff
 #icons-form-desktop {
   display: none;
 }
+
 /*
 Desktop Media Query styles
 */
@@ -392,7 +394,7 @@ Desktop Media Query styles
 
   .heading-section p {
     line-height: 32px;
-  } 
+  }
 
   .works-section {
     grid-template-columns: 33% 33% 33%;
