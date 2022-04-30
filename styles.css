@@ -458,6 +458,7 @@ Desktop Media Query styles
       bottom right,
       bottom left 20rem;
     background-repeat: no-repeat;
+    padding: 6.5rem;
   }
 
   #form-section h2 {
