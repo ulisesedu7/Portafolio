@@ -353,6 +353,10 @@ Desktop hidden stuff
   display: none;
 }
 
+#desktop-hr {
+  display: none;
+}
+
 /*
 Desktop Media Query styles
 */
@@ -365,6 +369,11 @@ Desktop Media Query styles
 
   .heading-section {
     background-image: none;
+  }
+
+  .heading-section p {
+    padding: 0 17rem;
+    line-height: 32px;
   }
 
   #mobile-header {
@@ -393,10 +402,6 @@ Desktop Media Query styles
     letter-spacing: 0.37px;
     color: #172b4d;
     margin: 24px 0;
-  }
-
-  .heading-section p {
-    line-height: 32px;
   }
 
   .works-section {
@@ -438,6 +443,7 @@ Desktop Media Query styles
 
   #about-me-article p {
     grid-area: articlep;
+    padding: 0 15rem;
   }
 
   #about-me-article button {
@@ -452,6 +458,7 @@ Desktop Media Query styles
       bottom right,
       bottom left 20rem;
     background-repeat: no-repeat;
+    padding: 6.5rem;
   }
 
   #form-section h2 {
@@ -489,6 +496,14 @@ Desktop Media Query styles
   #icons-form-desktop {
     display: flex;
     justify-content: center;
+  }
+
+  #desktop-hr {
+    display: block;
+    background-color: #dfe1e6;
+    border-radius: 24px;
+    margin-top: 2rem;
+    border: 1px solid #dfe1e6;
   }
 
   footer {
