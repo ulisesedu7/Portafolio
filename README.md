@@ -20,6 +20,11 @@
 - GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
 - Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
 
+👤 **Neeraj Bhardwaj**
+
+- GitHub: [@rebel216](https://github.com/rebel216)
+- Twitter: [@rebel216](https://twitter.com/rebel216)
+
 👤 **Ogiogio Victor**
 
 -Twitter: [Ogiogiovictor](https://twitter.com/a0df623fb9d9482)
