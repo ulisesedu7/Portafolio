@@ -87,6 +87,12 @@ Mobile Menu toggle styles
   line-height: 44px;
 }
 
+/* Is Hidden */
+
+.is-hidden {
+  visibility: hidden;
+}
+
 .nav-bar-a {
   font-weight: 600;
   font-size: 20px;
@@ -265,11 +271,10 @@ Feature 2 Styles Section
   text-align: center;
   row-gap: 24px;
   justify-items: center;
-  background-image: url('images/aboutme-background.png'), url('images/aboutme-background2.png');
+  background-image: url('images/aboutme-background.png'),
+    url('images/aboutme-background2.png');
   background-repeat: no-repeat;
-  background-position:
-    top left,
-    top right;
+  background-position: top left, top right;
 }
 
 #about-me-article p {
@@ -465,8 +470,8 @@ Desktop Media Query styles
   .works-section {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      "arrow arrow arrow"
-      "header1 header1 header1";
+      'arrow arrow arrow'
+      'header1 header1 header1';
     align-items: center;
     justify-content: center;
   }
@@ -482,17 +487,16 @@ Desktop Media Query styles
   #about-me-article {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      "h2 h2 h2"
-      "articlep articlep articlep"
-      "btn btn btn";
+      'h2 h2 h2'
+      'articlep articlep articlep'
+      'btn btn btn';
     align-items: center;
     justify-content: center;
     padding-top: 192px;
-    background-image: url('images/about-me-desktop-bg2.png'), url('images/about-me-desktop-bg1.png');
+    background-image: url('images/about-me-desktop-bg2.png'),
+      url('images/about-me-desktop-bg1.png');
     background-repeat: no-repeat;
-    background-position:
-      top 380px left,
-      top 50px right;
+    background-position: top 380px left, top 50px right;
   }
 
   #about-me-article h2 {
@@ -510,11 +514,9 @@ Desktop Media Query styles
 
   #form-section {
     flex-direction: row;
-    background-image: url('images/form-bg1.png'), url('images/form-bg2.png'), url('images/form-bg3.png');
-    background-position:
-      bottom -50px left,
-      bottom right,
-      bottom left 20rem;
+    background-image: url('images/form-bg1.png'), url('images/form-bg2.png'),
+      url('images/form-bg3.png');
+    background-position: bottom -50px left, bottom right, bottom left 20rem;
     background-repeat: no-repeat;
     padding: 6.5rem;
   }

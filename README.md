@@ -30,6 +30,12 @@
 -Twitter: [Ogiogiovictor](https://twitter.com/a0df623fb9d9482)
 -LinkedIn:  [Ogiogiovictor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
 
+👤 **Gabriel Santo**
+
+- GitHub: [@gvgesanto2](https://github.com/gvgesanto2)
+- Twitter: [@GabrielSanto997](https://twitter.com/GabrielSanto997)
+- LinkedIn: [Gabriel Santo](https://linkedin.com/in/gabriel-santo-5882a71b2/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
