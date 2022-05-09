@@ -78,13 +78,15 @@ Mobile Menu toggle styles
   list-style: none;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .mobile-menu-links a {
-  margin: 20px 0;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  display: block;
+  margin: 20px 20px;
 }
 
 /* Is Hidden */
