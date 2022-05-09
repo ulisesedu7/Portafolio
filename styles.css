@@ -174,7 +174,6 @@ Feature 2 Styles Section
 
 .works-section {
   display: grid;
-  grid-template-rows: '8';
   text-align: center;
   row-gap: 24px;
   justify-items: center;
