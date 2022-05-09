@@ -9,6 +9,15 @@ Feature 1 Styles Section
   font-style: normal;
 }
 
+.header-b {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
 /*
 Items with Display Flex
 */
@@ -63,10 +72,12 @@ Mobile Menu toggle styles
   top: 0;
   left: -100%;
   width: 100vw;
-  height: 100vh;
+  height: 90%;
   margin-top: 50px;
   background-color: #fff;
   transition: 0.3s;
+  border-radius: 48px;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .mobile-menu.active {
