@@ -16,9 +16,9 @@ hamburger.addEventListener('click', () => {
 /*
 Close Menu when you click the nav links
 */
-document.querySelectorAll('.mobile-link').forEach(n => (n.addEventListener('click', () => {
+document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
   mainLogo.classList.remove('is-hidden');
   headerB.classList.remove('header-b');
-})));
+}));
