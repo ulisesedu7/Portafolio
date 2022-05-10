@@ -583,3 +583,19 @@ Desktop Media Query styles
     display: none;
   }
 }
+
+/*
+Pop Up windows Styles
+*/
+.mobile-pop {
+  position: static;
+  height: 100vh;
+}
+
+.mobile-pop h3 {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  margin: 16px 0;
+  color: #172b4d;
+}
