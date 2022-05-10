@@ -9,6 +9,15 @@ Feature 1 Styles Section
   font-style: normal;
 }
 
+.header-b {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
 /*
 Items with Display Flex
 */
@@ -27,6 +36,74 @@ Items with Display Flex
 #nav-bar-btn {
   border: none;
   background-color: #fff;
+  cursor: pointer;
+}
+
+/*
+Hamburguer Icon Classes
+*/
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #28352f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-bar-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-bar-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#nav-bar-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/*
+Mobile Menu toggle styles
+*/
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 90%;
+  margin-top: 50px;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 48px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-menu-links {
+  text-decoration: none;
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mobile-menu-links a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: block;
+  margin: 20px 20px;
+}
+
+/* Is Hidden */
+
+.is-hidden {
+  visibility: hidden;
 }
 
 .nav-bar-a {
@@ -108,7 +185,6 @@ Feature 2 Styles Section
 
 .works-section {
   display: grid;
-  grid-template-rows: 8;
   text-align: center;
   row-gap: 24px;
   justify-items: center;
@@ -207,11 +283,11 @@ Feature 2 Styles Section
   text-align: center;
   row-gap: 24px;
   justify-items: center;
-  background-image: url('images/aboutme-background.png'), url('images/aboutme-background2.png');
+  background-image:
+    url('images/aboutme-background.png'),
+    url('images/aboutme-background2.png');
   background-repeat: no-repeat;
-  background-position:
-    top left,
-    top right;
+  background-position: top left, top right;
 }
 
 #about-me-article p {
@@ -407,8 +483,8 @@ Desktop Media Query styles
   .works-section {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      "arrow arrow arrow"
-      "header1 header1 header1";
+      'arrow arrow arrow'
+      'header1 header1 header1';
     align-items: center;
     justify-content: center;
   }
@@ -424,17 +500,17 @@ Desktop Media Query styles
   #about-me-article {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      "h2 h2 h2"
-      "articlep articlep articlep"
-      "btn btn btn";
+      'h2 h2 h2'
+      'articlep articlep articlep'
+      'btn btn btn';
     align-items: center;
     justify-content: center;
     padding-top: 192px;
-    background-image: url('images/about-me-desktop-bg2.png'), url('images/about-me-desktop-bg1.png');
+    background-image:
+      url('images/about-me-desktop-bg2.png'),
+      url('images/about-me-desktop-bg1.png');
     background-repeat: no-repeat;
-    background-position:
-      top 380px left,
-      top 50px right;
+    background-position: top 380px left, top 50px right;
   }
 
   #about-me-article h2 {
@@ -452,11 +528,11 @@ Desktop Media Query styles
 
   #form-section {
     flex-direction: row;
-    background-image: url('images/form-bg1.png'), url('images/form-bg2.png'), url('images/form-bg3.png');
-    background-position:
-      bottom -50px left,
-      bottom right,
-      bottom left 20rem;
+    background-image:
+      url('images/form-bg1.png'),
+      url('images/form-bg2.png'),
+      url('images/form-bg3.png');
+    background-position: bottom -50px left, bottom right, bottom left 20rem;
     background-repeat: no-repeat;
     padding: 6.5rem;
   }
