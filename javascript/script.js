@@ -51,6 +51,9 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
 
   document.getElementById('source-btn').href = projectInfo[id].liveBtn;
 
+  //Show Same list of technologies accordingly
+  
+
   popUpMobile.classList.add('show');
 }));
 
