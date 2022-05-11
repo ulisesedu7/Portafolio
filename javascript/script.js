@@ -35,7 +35,22 @@ const popUpMobile = document.querySelector('#project-pop');
 const btnOpen = document.querySelectorAll('.project-btn');
 
 btnOpen.forEach((n) => n.addEventListener('click', () => {
-  changeContent();
+  let id = n.id;
+  
+  //Change Project Image
+  document.getElementById('project-img').src = "images/" + projectInfo[id].featureImg;
+
+  //Change Project Name
+  document.getElementById('project-title').innerHTML = projectInfo[id].projectName;
+  
+  //Change Project Description
+  document.getElementById('project-d').innerHTML = projectInfo[id].description;
+
+  //Change Btn Hiperlinks
+  document.getElementById('live-btn').href = projectInfo[id].liveBtn;
+
+  document.getElementById('source-btn').href = projectInfo[id].liveBtn;
+
   popUpMobile.classList.add('show');
 }));
 
@@ -47,10 +62,3 @@ const btnClose = document.getElementById('img-btn');
 btnClose.addEventListener('click', () => {
   popUpMobile.classList.remove('show');
 });
-
-/*
-Function to change the content of the Project
-*/
-function changeContent () {
-  document.getElementById('project-title').innerHTML = projectInfo[0].projectName;
-};
