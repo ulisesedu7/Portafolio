@@ -1,5 +1,3 @@
-const projectInfo = [project1, project2, project3, project3, project5, project6]
-
 const project1 = {
   id: 1,
   featureImg: "project-img1",
@@ -59,5 +57,7 @@ const project6 = {
   liveBtn: "https://google.com",
   sourceBtn: "https://google.com"
 };
+
+const projectInfo = [project1, project2, project3, project3, project5, project6]
 
 export default projectInfo;
