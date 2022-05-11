@@ -679,8 +679,8 @@ Desktop Media Query styles
 
   /*Styles for the desktop version of the pop up window*/
   .bg-container {
-    position: static;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
   }
 
   .mobile-pop {
@@ -688,8 +688,8 @@ Desktop Media Query styles
   }
 
   .mobile-pop img {
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     border-radius: 8px;
     margin: 12px 0;
   }
