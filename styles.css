@@ -437,7 +437,7 @@ Pop Up windows Styles
 .bg-container {
   position: fixed;
   padding: 20px 16px 26px;
-  height: 100vh;
+  height: 100%;
   background: #C1C7D0;
   opacity: 0;
   pointer-events: none;
@@ -678,5 +678,30 @@ Desktop Media Query styles
   }
 
   /*Styles for the desktop version of the pop up window*/
+  .bg-container {
+    position: static;
+    height: 100%;
+  }
 
+  .mobile-pop {
+    padding: 78px 20px 44px;
+  }
+
+  .mobile-pop img {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+
+  /*
+  X button over image Position
+  */
+  #img-container #img-btn {
+    position: absolute;
+    top: -5%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 }
