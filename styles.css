@@ -455,6 +455,8 @@ Pop Up windows Styles
 }
 
 .mobile-pop img {
+  width: 331px;
+  height: 220px;
   border-radius: 8px;
   margin: 12px 0;
 }
@@ -674,4 +676,7 @@ Desktop Media Query styles
   footer {
     display: none;
   }
+
+  /*Styles for the desktop version of the pop up window*/
+
 }

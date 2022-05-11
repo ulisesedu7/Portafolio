@@ -23,7 +23,7 @@ const project2 = {
 const project3 = {
   id: 3,
   featureImg: "project-img2",
-  projectName: "Project 2",
+  projectName: "Project 3",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   liveBtn: "https://google.com",
@@ -33,7 +33,7 @@ const project3 = {
 const project4 = {
   id: 4,
   featureImg: "project-img2",
-  projectName: "Project 2",
+  projectName: "Project 4",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   liveBtn: "https://google.com",
@@ -43,7 +43,7 @@ const project4 = {
 const project5 = {
   id: 5,
   featureImg: "project-img2",
-  projectName: "Project 2",
+  projectName: "Project 5",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   liveBtn: "https://google.com",
@@ -53,7 +53,7 @@ const project5 = {
 const project6 = {
   id: 6,
   featureImg: "project-img2",
-  projectName: "Project 2",
+  projectName: "Project 6",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   liveBtn: "https://google.com",
