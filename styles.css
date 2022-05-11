@@ -138,6 +138,7 @@ Mobile Menu toggle styles
 }
 
 #main-heading strong {
+  display: block;
   color: #36b37f;
 }
 
