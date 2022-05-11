@@ -27,8 +27,14 @@ document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('cli
 Pop Up Window JS code 
 */
 const popUpMobile = document.querySelector('#project-pop');
-const btnOpen = document.getElementById('btn-1');
+const btnOpen = document.querySelectorAll('.project-btn');
 
-btnOpen.addEventListener('click', () => {
+btnOpen.forEach((n) => n.addEventListener('click', () => {
+  
   popUpMobile.classList.add('show');
-});
+}));
+
+/*
+Close pop up window
+*/
+

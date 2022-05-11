@@ -1,6 +1,7 @@
 const projectInfo = [project1, project2, project3, project3, project5, project6]
 
 const project1 = {
+  Id: 1,
   featureImg: "project-img1",
   projectName: "Project 1",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
@@ -10,6 +11,7 @@ const project1 = {
 };
 
 const project2 = {
+  Id: 1,
   featureImg: "project-img2",
   projectName: "Project 2",
   technologies: ["Ruby on Rails", "CSS", "HTML", "Javascript"],
@@ -17,3 +19,5 @@ const project2 = {
   liveBtn: "https://google.com",
   sourceBtn: "https://google.com"
 };
+
+// export default projectInfo;
