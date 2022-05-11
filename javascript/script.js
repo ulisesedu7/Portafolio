@@ -6,7 +6,7 @@ const headerB = document.querySelector('#mobile-header');
 /*
 Open Hamburguer menu when the icon is clicked
 */
-  hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   mainLogo.classList.toggle('is-hidden');
@@ -26,4 +26,9 @@ document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('cli
 /*
 Pop Up Window JS code 
 */
+const popUpMobile = document.querySelector('#project-pop');
+const btnOpen = document.getElementById('btn-1');
 
+btnOpen.addEventListener('click', () => {
+  popUpMobile.classList.add('show');
+});
