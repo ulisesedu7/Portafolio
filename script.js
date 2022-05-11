@@ -6,7 +6,7 @@ const headerB = document.querySelector('#mobile-header');
 /*
 Open Hamburguer menu when the icon is clicked
 */
-hamburger.addEventListener('click', () => {
+  hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   mainLogo.classList.toggle('is-hidden');
