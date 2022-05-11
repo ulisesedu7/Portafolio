@@ -3,6 +3,9 @@ JS Object Data
 */
 import projectInfo from "./data.js";
 
+/*
+Hamburguer Menu constants
+*/
 const hamburger = document.querySelector('#nav-bar-btn');
 const navMenu = document.querySelector('.mobile-menu');
 const mainLogo = document.querySelector('#main-logo');
@@ -52,7 +55,6 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
   document.getElementById('source-btn').href = projectInfo[id].liveBtn;
 
   //Show Same list of technologies accordingly
-  
 
   popUpMobile.classList.add('show');
 }));

@@ -680,7 +680,8 @@ Desktop Media Query styles
   /*Styles for the desktop version of the pop up window*/
   .bg-container {
     position: fixed;
-    height: 100vh;
+    max-height: 100%;
+    overflow: scroll;
   }
 
   .mobile-pop {
