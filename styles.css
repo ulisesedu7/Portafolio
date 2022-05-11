@@ -587,15 +587,43 @@ Desktop Media Query styles
 /*
 Pop Up windows Styles
 */
+.bg-container {
+  padding: 20px 16px 26px;
+  height: 100%;
+  background: #C1C7D0;
+}
+
 .mobile-pop {
   position: static;
-  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 48px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.mobile-pop img {
+  border-radius: 8px;
+  margin: 12px 0;
 }
 
 .mobile-pop h3 {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 44px;
   margin: 16px 0;
   color: #172b4d;
 }
+
+.mobile-pop p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.mobile-pop ul button {
+  margin: 4px 0;
+}
+
