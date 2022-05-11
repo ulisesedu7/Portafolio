@@ -1,3 +1,5 @@
+import projectInfo from "./data.js";
+
 const hamburger = document.querySelector('#nav-bar-btn');
 const navMenu = document.querySelector('.mobile-menu');
 const mainLogo = document.querySelector('#main-logo');
