@@ -493,6 +493,35 @@ Pop Up windows Styles
   pointer-events: auto;
   opacity: 1;
 }
+
+/*
+X button over image
+*/
+#img-container {
+  position: relative;
+}
+
+#img-container #img-btn {
+  position: absolute;
+  top: 15%;
+  left: 93%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#img-btn .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#img-btn .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#img-btn .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /*
 Desktop Media Query styles
 */

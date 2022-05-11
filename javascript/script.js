@@ -1,4 +1,4 @@
-import projectInfo from "./data.js";
+// import projectInfo from "data.js";
 
 const hamburger = document.querySelector('#nav-bar-btn');
 const navMenu = document.querySelector('.mobile-menu');
@@ -32,11 +32,14 @@ const popUpMobile = document.querySelector('#project-pop');
 const btnOpen = document.querySelectorAll('.project-btn');
 
 btnOpen.forEach((n) => n.addEventListener('click', () => {
-  
   popUpMobile.classList.add('show');
 }));
 
 /*
 Close pop up window
 */
+const btnClose = document.getElementById('img-btn');
 
+btnClose.addEventListener('click', () => {
+  popUpMobile.classList.remove('show');
+});
