@@ -22,3 +22,8 @@ document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('cli
   mainLogo.classList.remove('is-hidden');
   headerB.classList.remove('header-b');
 }));
+
+/*
+Pop Up Window JS code 
+*/
+
