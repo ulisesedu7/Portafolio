@@ -34,7 +34,7 @@ document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('cli
 /*
 Create HTML dynamically
 */
-function genProjectTechMarkUp (technologies) {
+function genProjectTechMarkUp(technologies) {
   const projectTechsListMarkup = `
     <ul class="display-flex">
       ${technologies.reduce(
@@ -44,21 +44,21 @@ function genProjectTechMarkUp (technologies) {
     </ul>
   `;
   return projectTechsListMarkup;
-};
+}
 
-function genProjectMarkup (projectName, technologies, projectId) {
-  const technologiesMarkUp = genProjectTechMarkUp (technologies);
+function genProjectMarkup(projectName, technologies, projectId) {
+  const technologiesMarkUp = genProjectTechMarkUp(technologies);
   const projectMarkUp = `<div class="work-card display-flex">
   <div class="work-card-content">
     <h3>${projectName}</h3>
-    ${genProjectTechMarkUp(technologies)}
+    ${technologiesMarkUp}
     <button type="button" class="main-button project-btn" id=${projectId}>See Project</button>
   </div>
 </div>`;
-return projectMarkUp;
-};
+  return projectMarkUp;
+}
 
-const projectsMarkUp = projectInfo.reduce((acc, {id, projectName, technologies}) => `${acc}${genProjectMarkup(projectName, technologies, id)}`, '');
+const projectsMarkUp = projectInfo.reduce((acc, { id, projectName, technologies }) => `${acc}${genProjectMarkup(projectName, technologies, id)}`, '');
 
 const workSection = document.getElementById('portafolio');
 
@@ -67,7 +67,14 @@ workSection.insertAdjacentHTML('beforeend', projectsMarkUp);
 /*
 Create pop up automatically
 */
-function genProjectPopUpMarkUp (featureImg, projectName, technologies, description, liveBtn, sourceBtn) {
+function genProjectPopUpMarkUp(
+  featureImg,
+  projectName,
+  technologies,
+  description,
+  liveBtn,
+  sourceBtn,
+) {
   const projectPopUpMarkUp = `<div class="mobile-pop display-flex" id="popUp">
   <div id="img-container">
     <img src=${featureImg} alt="image of the project" id="project-img">
@@ -89,8 +96,8 @@ function genProjectPopUpMarkUp (featureImg, projectName, technologies, descripti
   </div>
 </div>`;
 
-return projectPopUpMarkUp;
-};
+  return projectPopUpMarkUp;
+}
 
 const projectPop = document.getElementById('project-pop');
 
@@ -101,9 +108,18 @@ const btnOpen = document.querySelectorAll('.project-btn');
 
 btnOpen.forEach((n) => n.addEventListener('click', () => {
   const { id } = n;
-  const {featureImg, projectName, technologies, description, liveBtn, sourceBtn} = projectInfo[id];
+  const {
+    featureImg, projectName, technologies, description, liveBtn, sourceBtn,
+  } = projectInfo[id];
 
-  const projectPopUpMarkUp = genProjectPopUpMarkUp (featureImg, projectName, technologies, description, liveBtn, sourceBtn);
+  const projectPopUpMarkUp = genProjectPopUpMarkUp(
+    featureImg,
+    projectName,
+    technologies,
+    description,
+    liveBtn,
+    sourceBtn,
+  );
 
   projectPop.insertAdjacentHTML('beforeend', projectPopUpMarkUp);
 
