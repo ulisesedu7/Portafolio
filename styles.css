@@ -444,6 +444,7 @@ Pop Up windows Styles
   top: 0;
   left: 0;
   transition: opacity 0.3s ease;
+  overflow: scroll;
 }
 
 .mobile-pop {
@@ -478,15 +479,28 @@ Pop Up windows Styles
   text-align: left;
 }
 
-.mobile-pop ul button {
-  margin: 4px 0;
+.info-container {
+  display: grid;
+
 }
 
-.mobile-pop ul button a {
+.btn-order {
+  justify-self: center;
+}
+
+#technologies {
+  justify-content: center;
+}
+
+.btn-order button {
+  margin: 4px;
+}
+
+.btn-order button a {
  text-decoration: none;
 }
 
-.mobile-pop ul button a:visited {
+.btn-order button a:visited {
   text-decoration: none;
   color: #fff;
 }
@@ -681,11 +695,11 @@ Desktop Media Query styles
   .bg-container {
     position: fixed;
     max-height: 100%;
-    overflow: scroll;
   }
 
   .mobile-pop {
     padding: 78px 20px 44px;
+    align-items: center;
   }
 
   .mobile-pop img {
@@ -695,13 +709,49 @@ Desktop Media Query styles
     margin: 12px 0;
   }
 
+  .info-container {
+    align-self: flex-start;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    "header btns"
+    "list ."
+    "description description";
+    justify-items: start;
+  }
+
+  #project-title {
+    grid-area: header;
+    justify-self: start;
+  }
+
+  .btn-order {
+    grid-area: btns;  
+    align-self: center;
+  }
+
+  #technologies {
+    grid-area: list;
+    justify-self: start;
+  }
+
+  #technologies li:first-child {
+    margin-left: 0;
+  }
+
+  #project-d {
+    grid-area: description;
+    margin-left: 0;
+    margin-top: 36px;
+  }
+  
   /*
   X button over image Position
   */
   #img-container #img-btn {
     position: absolute;
     top: -5%;
-    left: 100%;
+    left: 95%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
