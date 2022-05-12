@@ -58,6 +58,6 @@ const project6 = {
   sourceBtn: 'https://google.com',
 };
 
-const projectInfo = [project1, project2, project3, project4, project5, project6]
+const projectInfo = [project1, project2, project3, project4, project5, project6];
 
 export default projectInfo;

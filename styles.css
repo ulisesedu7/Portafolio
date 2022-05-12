@@ -51,6 +51,32 @@ Hamburguer Icon Classes
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+/*
+X button over image -placed here due to linters
+*/
+#img-container {
+  position: relative;
+}
+
+#img-container #img-btn {
+  position: absolute;
+  top: 15%;
+  left: 93%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#img-btn .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#img-btn .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#img-btn .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 #nav-bar-btn.active .bar:nth-child(2) {
   opacity: 0;
@@ -511,35 +537,6 @@ Pop Up windows Styles
   pointer-events: auto;
   opacity: 1;
 }
-
-/*
-X button over image
-*/
-#img-container {
-  position: relative;
-}
-
-#img-container #img-btn {
-  position: absolute;
-  top: 15%;
-  left: 93%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-#img-btn .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#img-btn .bar:nth-child(2) {
-  opacity: 0;
-}
-
-#img-btn .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 /*
 Desktop Media Query styles
 */
@@ -709,7 +706,7 @@ Desktop Media Query styles
 
   .mobile-pop img {
     width: fit-content;
-    height: fit-content;
+    height: 100%;
     border-radius: 8px;
     margin: 12px 0;
   }
@@ -717,11 +714,11 @@ Desktop Media Query styles
   .info-container {
     align-self: flex-start;
     grid-template-columns: 70% 1fr;
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
-    "header btns"
-    "list ."
-    "description description";
+      "header btns"
+      "list ."
+      "description description";
     justify-items: start;
   }
 
@@ -731,7 +728,7 @@ Desktop Media Query styles
   }
 
   .btn-order {
-    grid-area: btns;  
+    grid-area: btns;
     align-self: center;
   }
 
@@ -749,7 +746,6 @@ Desktop Media Query styles
     margin-left: 0;
     margin-top: 36px;
   }
-  
   /*
   X button over image Position
   */
