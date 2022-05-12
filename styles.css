@@ -66,6 +66,11 @@ X button over image -placed here due to linters
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   cursor: pointer;
+  padding: 12px;
+}
+
+#img-container #img-btn .bar {
+  background-color: #67798e;
 }
 
 #img-btn .bar:nth-child(1) {
@@ -497,7 +502,7 @@ Pop Up windows Styles
 .mobile-pop {
   flex-direction: column;
   text-align: center;
-  border-radius: 48px;
+  border-radius: 8px;
   align-items: center;
   background-color: #fff;
 }
@@ -515,6 +520,7 @@ Pop Up windows Styles
 }
 
 .btn-order {
+  margin-bottom: 16px;
   justify-self: center;
 }
 
@@ -695,18 +701,21 @@ Desktop Media Query styles
   */
   .bg-container {
     position: fixed;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
   }
 
   .mobile-pop {
     padding: 78px 20px 44px;
     align-items: center;
-    width: fit-content;
+    width: 920px;
+    height: auto;
+    margin: 40px auto;
   }
 
   .mobile-pop img {
-    width: fit-content;
-    height: 100%;
+    width: 872px;
+    height: 616px;
     border-radius: 8px;
     margin: 12px 0;
   }
@@ -756,5 +765,6 @@ Desktop Media Query styles
     left: 95%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    background-color: #ebecf0;
   }
 }
