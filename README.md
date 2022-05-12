@@ -20,6 +20,8 @@
 - GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
 - Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
 
+## Contributors
+
 👤 **Neeraj Bhardwaj**
 
 - GitHub: [@rebel216](https://github.com/rebel216)
