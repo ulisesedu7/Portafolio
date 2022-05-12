@@ -51,6 +51,7 @@ Hamburguer Icon Classes
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 /*
 X button over image -placed here due to linters
 */
@@ -66,6 +67,7 @@ X button over image -placed here due to linters
   -ms-transform: translate(-50%, -50%);
   cursor: pointer;
 }
+
 #img-btn .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -537,6 +539,7 @@ Pop Up windows Styles
   pointer-events: auto;
   opacity: 1;
 }
+
 /*
 Desktop Media Query styles
 */
@@ -746,6 +749,7 @@ Desktop Media Query styles
     margin-left: 0;
     margin-top: 36px;
   }
+  
   /*
   X button over image Position
   */
