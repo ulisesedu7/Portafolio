@@ -522,11 +522,8 @@ Pop Up windows Styles
   justify-content: center;
 }
 
-.btn-order button {
+.btn-order a {
   margin: 4px;
-}
-
-.btn-order button a {
   text-decoration: none;
 }
 
@@ -749,7 +746,7 @@ Desktop Media Query styles
     margin-left: 0;
     margin-top: 36px;
   }
-  
+
   /*
   X button over image Position
   */
