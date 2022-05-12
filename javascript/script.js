@@ -1,7 +1,7 @@
 /*
 JS Object Data
 */
-import projectInfo from "./data.js";
+import projectInfo from './data.js';
 
 /*
 Hamburguer Menu constants
@@ -32,30 +32,24 @@ document.querySelectorAll('.mobile-link').forEach((n) => n.addEventListener('cli
 }));
 
 /*
-Pop Up Window JS code 
+Pop Up Window JS code
 */
 const popUpMobile = document.querySelector('#project-pop');
 const btnOpen = document.querySelectorAll('.project-btn');
 
 btnOpen.forEach((n) => n.addEventListener('click', () => {
-  let id = n.id;
-  
-  //Change Project Image
-  document.getElementById('project-img').src = "images/" + projectInfo[id].featureImg;
-
-  //Change Project Name
+  const id = n.id;
+  // Change Project Image
+  document.getElementById('project-img').src = 'images/' + projectInfo[id].featureImg;
+  // Change Project Name
   document.getElementById('project-title').innerHTML = projectInfo[id].projectName;
-  
-  //Change Project Description
+  // Change Project Description
   document.getElementById('project-d').innerHTML = projectInfo[id].description;
-
-  //Change Btn Hiperlinks
+  // Change Btn Hiperlinks
   document.getElementById('live-btn').href = projectInfo[id].liveBtn;
 
   document.getElementById('source-btn').href = projectInfo[id].liveBtn;
-
-  //Show Same list of technologies accordingly
-
+  
   popUpMobile.classList.add('show');
 }));
 

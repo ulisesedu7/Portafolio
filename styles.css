@@ -166,6 +166,13 @@ Mobile Menu toggle styles
 /*
 According to linters this should be placed here
 */
+.mobile-pop img {
+  width: 331px;
+  height: 220px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
 .aboutme-card img {
   height: 80px;
   width: 80px;
@@ -286,6 +293,18 @@ Feature 2 Styles Section
     url('images/aboutme-background2.png');
   background-repeat: no-repeat;
   background-position: top left, top right;
+}
+
+/*
+According to linters this should be placed here
+*/
+.mobile-pop p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px;
+  text-align: left;
 }
 
 #about-me-article p {
@@ -438,7 +457,7 @@ Pop Up windows Styles
   position: fixed;
   padding: 20px 16px 26px;
   height: 100%;
-  background: #C1C7D0;
+  background: #c1c7d0;
   opacity: 0;
   pointer-events: none;
   top: 0;
@@ -455,13 +474,6 @@ Pop Up windows Styles
   background-color: #fff;
 }
 
-.mobile-pop img {
-  width: 331px;
-  height: 220px;
-  border-radius: 8px;
-  margin: 12px 0;
-}
-
 .mobile-pop h3 {
   font-weight: 600;
   font-size: 32px;
@@ -470,18 +482,8 @@ Pop Up windows Styles
   color: #172b4d;
 }
 
-.mobile-pop p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  margin: 12px;
-  text-align: left;
-}
-
 .info-container {
   display: grid;
-
 }
 
 .btn-order {
@@ -497,7 +499,7 @@ Pop Up windows Styles
 }
 
 .btn-order button a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .btn-order button a:visited {
@@ -526,12 +528,12 @@ X button over image
   cursor: pointer;
 }
 
-#img-btn .bar:nth-child(2) {
-  opacity: 0;
-}
-
 #img-btn .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+}
+
+#img-btn .bar:nth-child(2) {
+  opacity: 0;
 }
 
 #img-btn .bar:nth-child(3) {
@@ -691,7 +693,9 @@ Desktop Media Query styles
     display: none;
   }
 
-  /*Styles for the desktop version of the pop up window*/
+  /*
+  Styles for the desktop version of the pop up window
+  */
   .bg-container {
     position: fixed;
     height: 100%;
