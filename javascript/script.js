@@ -38,9 +38,9 @@ const popUpMobile = document.querySelector('#project-pop');
 const btnOpen = document.querySelectorAll('.project-btn');
 
 btnOpen.forEach((n) => n.addEventListener('click', () => {
-  const id = n.id;
+  const { id } = n;
   // Change Project Image
-  document.getElementById('project-img').src = 'images/' + projectInfo[id].featureImg;
+  document.getElementById('project-img').src = `images/${projectInfo[id].featureImg}`;
   // Change Project Name
   document.getElementById('project-title').innerHTML = projectInfo[id].projectName;
   // Change Project Description
@@ -49,7 +49,7 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
   document.getElementById('live-btn').href = projectInfo[id].liveBtn;
 
   document.getElementById('source-btn').href = projectInfo[id].liveBtn;
-  
+
   popUpMobile.classList.add('show');
 }));
 
