@@ -134,7 +134,3 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
     popUp.remove();
   });
 }));
-
-/*
-Close pop up window
-*/
