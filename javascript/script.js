@@ -187,6 +187,9 @@ mainForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (emailValid === true) {
+    localStorage.removeItem('fullNameValue');
+    localStorage.removeItem('emailValue');
+    localStorage.removeItem('textareaValue');
     mainForm.submit();
   }
 });
@@ -213,3 +216,15 @@ textareaInput.addEventListener('change', () => {
 const fullNameValue = localStorage.getItem('fullNameValue');
 const emailValue = localStorage.getItem('emailValue');
 const textareaValue = localStorage.getItem('textareaValue');
+
+if (fullNameValue) {
+  fullNameInput.value = fullNameValue;
+}
+
+if (emailValue) {
+  emailInput.value = emailValue;
+}
+
+if (textareaValue) {
+  textareaInput.value = textareaValue;
+}
