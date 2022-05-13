@@ -207,8 +207,8 @@ const contactFormData = {
 };
 
 const newContactFormData = JSON.parse(localStorage.getItem('contactFormData'));
-if(newContactFormData) {
-  const {fullName, email, textarea} = newContactFormData;
+if (newContactFormData) {
+  const { fullName, email, textarea } = newContactFormData;
   fullNameInput.value = fullName;
   emailInput.value = email;
   textareaInput.value = textarea;
@@ -222,12 +222,7 @@ function updateLocalStorageItem(itemKey, attributeValue, attributeName) {
   if (item) {
     item[attributeName] = attributeValue;
     localStorage.setItem(itemKey, JSON.stringify(item));
-  } 
-  // else {
-  //   const newcontactFormData = contactFormData;
-  //   newcontactFormData[attributeName] = attributeValue;
-  //   localStorage.setItem(itemKey, JSON.stringify(initialItemValue));
-  // }
+  }
 }
 
 fullNameInput.addEventListener('change', () => {
@@ -241,4 +236,3 @@ emailInput.addEventListener('change', () => {
 textareaInput.addEventListener('change', () => {
   updateLocalStorageItem('contactFormData', textareaInput.value, 'textarea');
 });
-
