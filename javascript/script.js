@@ -139,22 +139,22 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
 Form Validation 2
 */
 
-// Message MarkUp 
-function genMessageMarkUp (message) {
+// Message MarkUp
+function genMessageMarkUp(message) {
   return `<div id="status-message">
   ${message}
-  </div>`
-};
+  </div>`;
+}
 
-function showMessage (sibblingElemId, message) {
+function showMessage(sibblingElemId, message) {
   const sibblingElement = document.getElementById(sibblingElemId);
 
-  sibblingElement.insertAdjacentHTML("afterend", genMessageMarkUp(message));
+  sibblingElement.insertAdjacentHTML('afterend', genMessageMarkUp(message));
 }
 
 let emailValid = false;
 
-function validateEmail (){
+function validateEmail() {
   const email = document.getElementById('email-form').value;
   const statusMessageEle = document.getElementById('status-message');
 
@@ -162,12 +162,11 @@ function validateEmail (){
     statusMessageEle.remove();
   }
 
-  const regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const regx = /^([a-z0-9_]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   if (regx.test(email)) {
     emailValid = true;
   } else {
-    
     showMessage('contact-form-text-area', 'Please insert a right email address (must be in lowercase)');
 
     emailValid = false;
@@ -187,7 +186,7 @@ mainForm.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
 
-  if (emailValid == true) {
+  if (emailValid === true) {
     mainForm.submit();
   }
 });
