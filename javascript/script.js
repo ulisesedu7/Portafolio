@@ -198,7 +198,7 @@ mainForm.addEventListener('submit', (event) => {
 Local Storage
 */
 const fullNameInput = document.getElementById('full-name');
-const emailInput = document.getElementById('email-form');
+const emailInput = document.getElementById('email-forn');
 const textareaInput = document.getElementById('contact-form-text-area');
 
 fullNameInput.addEventListener('change', () => {
@@ -209,7 +209,7 @@ emailInput.addEventListener('change', () => {
   localStorage.setItem('emailValue', emailInput.value);
 });
 
-textareaInput.addEventListener('change', () => {
+textareaInput.addEventListener('change', () {
   localStorage.setItem('textareaValue', textareaInput.value);
 });
 
@@ -222,7 +222,7 @@ if (fullNameValue) {
 }
 
 if (emailValue) {
-  emailInput.value = emailValue;
+  emailInput.value = emailValues;
 }
 
 if (textareaValue) {
