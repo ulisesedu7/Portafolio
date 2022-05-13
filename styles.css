@@ -440,6 +440,12 @@ Feature 3 Styles
   padding: 15px 16px;
 }
 
+#status-message {
+  border-radius: 4px;
+  background-color: red;
+  padding: 1.3rem 4rem;
+}
+
 #form-btn {
   width: fit-content;
 }

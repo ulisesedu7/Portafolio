@@ -139,21 +139,38 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
 Form Validation 2
 */
 
+// Message MarkUp 
+function genMessageMarkUp (message) {
+  return `<div id="status-message">
+  ${message}
+  </div>`
+};
+
+function showMessage (sibblingElemId, message) {
+  const sibblingElement = document.getElementById(sibblingElemId);
+
+  sibblingElement.insertAdjacentHTML("afterend", genMessageMarkUp(message));
+}
+
 let emailValid = false;
 
 function validateEmail (){
   const email = document.getElementById('email-form').value;
+  const statusMessageEle = document.getElementById('status-message');
+
+  if (statusMessageEle) {
+    statusMessageEle.remove();
+  }
 
   let regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   if (regx.test(email)) {
-    alert ("You have provided a valid email");
     emailValid = true;
-    return true;
   } else {
-    alert ("You have provided an incorred email");
+    
+    showMessage('contact-form-text-area', 'Please insert a right email address (it has to be lower case)');
+
     emailValid = false;
-    return false;
   }
 }
 
