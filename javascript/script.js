@@ -199,7 +199,7 @@ Local Storage
 */
 const fullNameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email-form');
-const textareaInput = document.getElementById('contact-form-text-area'); 
+const textareaInput = document.getElementById('contact-form-text-area');
 
 fullNameInput.addEventListener('change', () => {
   localStorage.setItem('fullNameValue', fullNameInput.value);
