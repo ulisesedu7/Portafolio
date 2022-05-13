@@ -134,3 +134,43 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
     popUp.remove();
   });
 }));
+
+/*
+Form Validation 2
+*/
+
+let emailValid = false;
+
+function validateEmail (){
+  const email = document.getElementById('email-form').value;
+
+  let regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+  if (regx.test(email)) {
+    alert ("You have provided a valid email");
+    emailValid = true;
+    return true;
+  } else {
+    alert ("You have provided an incorred email");
+    emailValid = false;
+    return false;
+  }
+}
+
+const btnSubmit = document.getElementById('form-btn');
+
+btnSubmit.addEventListener('click', () => {
+  validateEmail();
+});
+
+// Prevent Submission if email is invalid
+const mainForm = document.querySelector('#main-form');
+
+mainForm.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+
+  if (emailValid == true) {
+    mainForm.submit();
+  }
+});
