@@ -190,3 +190,26 @@ mainForm.addEventListener('submit', (event) => {
     mainForm.submit();
   }
 });
+
+/*
+Local Storage
+*/
+const fullNameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email-form');
+const textareaInput = document.getElementById('contact-form-text-area'); 
+
+fullNameInput.addEventListener('change', () => {
+  localStorage.setItem('fullNameValue', fullNameInput.value);
+});
+
+emailInput.addEventListener('change', () => {
+  localStorage.setItem('emailValue', emailInput.value);
+});
+
+textareaInput.addEventListener('change', () => {
+  localStorage.setItem('textareaValue', textareaInput.value);
+});
+
+const fullNameValue = localStorage.getItem('fullNameValue');
+const emailValue = localStorage.getItem('emailValue');
+const textareaValue = localStorage.getItem('textareaValue');
