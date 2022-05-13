@@ -168,7 +168,7 @@ function validateEmail (){
     emailValid = true;
   } else {
     
-    showMessage('contact-form-text-area', 'Please insert a right email address (it has to be lower case)');
+    showMessage('contact-form-text-area', 'Please insert a right email address (must be in lowercase)');
 
     emailValid = false;
   }

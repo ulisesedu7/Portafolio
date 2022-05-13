@@ -441,9 +441,12 @@ Feature 3 Styles
 }
 
 #status-message {
+  width: 327px;
+  border: 1px solid #ff3333;
   border-radius: 4px;
-  background-color: red;
-  padding: 1.3rem 4rem;
+  background-color: #ff8585;
+  color: #091e42;
+  padding: 1.3rem 0;
 }
 
 #form-btn {
@@ -679,6 +682,10 @@ Desktop Media Query styles
 
   #form-btn {
     align-self: flex-start;
+  }
+
+  #status-message {
+    width: 684px;
   }
 
   #icons-form-mobile {
