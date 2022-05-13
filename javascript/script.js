@@ -136,5 +136,57 @@ btnOpen.forEach((n) => n.addEventListener('click', () => {
 }));
 
 /*
-Close pop up window
+Form Validation 2
 */
+
+// Message MarkUp
+function genMessageMarkUp(message) {
+  return `<div id="status-message">
+  ${message}
+  </div>`;
+}
+
+function showMessage(sibblingElemId, message) {
+  const sibblingElement = document.getElementById(sibblingElemId);
+
+  sibblingElement.insertAdjacentHTML('afterend', genMessageMarkUp(message));
+}
+
+let emailValid = false;
+
+function validateEmail() {
+  const email = document.getElementById('email-form').value;
+  const statusMessageEle = document.getElementById('status-message');
+
+  if (statusMessageEle) {
+    statusMessageEle.remove();
+  }
+
+  const regx = /^([a-z0-9_]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+  if (regx.test(email)) {
+    emailValid = true;
+  } else {
+    showMessage('contact-form-text-area', 'Please insert a right email address (must be in lowercase)');
+
+    emailValid = false;
+  }
+}
+
+const btnSubmit = document.getElementById('form-btn');
+
+btnSubmit.addEventListener('click', () => {
+  validateEmail();
+});
+
+// Prevent Submission if email is invalid
+const mainForm = document.querySelector('#main-form');
+
+mainForm.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+
+  if (emailValid === true) {
+    mainForm.submit();
+  }
+});
