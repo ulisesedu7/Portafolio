@@ -187,9 +187,7 @@ mainForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (emailValid === true) {
-    localStorage.removeItem('fullNameValue');
-    localStorage.removeItem('emailValue');
-    localStorage.removeItem('textareaValue');
+    localStorage.removeItem('contactFormInput');
     mainForm.submit();
   }
 });
@@ -197,25 +195,42 @@ mainForm.addEventListener('submit', (event) => {
 /*
 Local Storage
 */
+const contactFormInput = {
+  fullNameValue: '',
+  emailValue: '',
+  textareaValue: ''
+};
+
 const fullNameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email-form');
 const textareaInput = document.getElementById('contact-form-text-area');
 
+function updateLocalStorageItem (itemKey, attributeValue, attributeName) {
+  const item = JSON.parse(localStorage.getItem(itemKey));
+
+  if (item) {
+    item[attributeName] = attributeValue;
+    localStorage.setItem(itemKey, JSON.stringify(item));
+  } else {
+    const newContactFormInput = contactFormInput;
+    newContactFormInput[attributeName] = attributeValue; 
+    localStorage.setItem(itemKey, JSON.stringify(contactFormInput));
+  }
+};
+
 fullNameInput.addEventListener('change', () => {
-  localStorage.setItem('fullNameValue', fullNameInput.value);
+  updateLocalStorageItem('contactFormInput', fullNameInput.value,'fullNameValue');
 });
 
 emailInput.addEventListener('change', () => {
-  localStorage.setItem('emailValue', emailInput.value);
+  updateLocalStorageItem('contactFormInput', emailInput.value,'emailValue');
 });
 
 textareaInput.addEventListener('change', () => {
-  localStorage.setItem('textareaValue', textareaInput.value);
+  updateLocalStorageItem('contactFormInput', textareaInput.value,'textareaValue');
 });
 
-const fullNameValue = localStorage.getItem('fullNameValue');
-const emailValue = localStorage.getItem('emailValue');
-const textareaValue = localStorage.getItem('textareaValue');
+const {fullNameValue, emailValue, textareaValue} = JSON.parse(localStorage.getItem('contactFormInput'));
 
 if (fullNameValue) {
   fullNameInput.value = fullNameValue;
