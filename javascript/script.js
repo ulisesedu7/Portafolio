@@ -187,7 +187,7 @@ mainForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (emailValid === true) {
-    localStorage.removeItem('contactFormInput');
+    localStorage.removeItem('contactFormData');
     mainForm.submit();
   }
 });
@@ -195,15 +195,26 @@ mainForm.addEventListener('submit', (event) => {
 /*
 Local Storage
 */
-const contactFormInput = {
-  fullNameValue: '',
-  emailValue: '',
-  textareaValue: '',
-};
 
 const fullNameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email-form');
 const textareaInput = document.getElementById('contact-form-text-area');
+
+const contactFormData = {
+  fullName: fullNameInput.value,
+  email: emailInput.value,
+  textarea: textareaInput.value,
+};
+
+const newContactFormData = JSON.parse(localStorage.getItem('contactFormData'));
+if(newContactFormData) {
+  const {fullName, email, textarea} = newContactFormData;
+  fullNameInput.value = fullName;
+  emailInput.value = email;
+  textareaInput.value = textarea;
+} else {
+  localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
+}
 
 function updateLocalStorageItem(itemKey, attributeValue, attributeName) {
   const item = JSON.parse(localStorage.getItem(itemKey));
@@ -211,35 +222,23 @@ function updateLocalStorageItem(itemKey, attributeValue, attributeName) {
   if (item) {
     item[attributeName] = attributeValue;
     localStorage.setItem(itemKey, JSON.stringify(item));
-  } else {
-    const newContactFormInput = contactFormInput;
-    newContactFormInput[attributeName] = attributeValue;
-    localStorage.setItem(itemKey, JSON.stringify(contactFormInput));
-  }
+  } 
+  // else {
+  //   const newcontactFormData = contactFormData;
+  //   newcontactFormData[attributeName] = attributeValue;
+  //   localStorage.setItem(itemKey, JSON.stringify(initialItemValue));
+  // }
 }
 
 fullNameInput.addEventListener('change', () => {
-  updateLocalStorageItem('contactFormInput', fullNameInput.value, 'fullNameValue');
+  updateLocalStorageItem('contactFormData', fullNameInput.value, 'fullName');
 });
 
 emailInput.addEventListener('change', () => {
-  updateLocalStorageItem('contactFormInput', emailInput.value, 'emailValue');
+  updateLocalStorageItem('contactFormData', emailInput.value, 'email');
 });
 
 textareaInput.addEventListener('change', () => {
-  updateLocalStorageItem('contactFormInput', textareaInput.value, 'textareaValue');
+  updateLocalStorageItem('contactFormData', textareaInput.value, 'textarea');
 });
 
-const { fullNameValue, emailValue, textareaValue } = JSON.parse(localStorage.getItem('contactFormInput'));
-
-if (fullNameValue) {
-  fullNameInput.value = fullNameValue;
-}
-
-if (emailValue) {
-  emailInput.value = emailValue;
-}
-
-if (textareaValue) {
-  textareaInput.value = textareaValue;
-}
