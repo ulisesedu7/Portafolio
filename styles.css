@@ -52,6 +52,35 @@ Hamburguer Icon Classes
   transition: all 0.3s ease-in-out;
 }
 
+/*
+X button over image -placed here due to linters
+*/
+#img-container {
+  position: relative;
+}
+
+#img-container #img-btn {
+  position: absolute;
+  top: 15%;
+  left: 93%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 12px;
+}
+
+#img-btn .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#img-btn .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#img-btn .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 #nav-bar-btn.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -64,6 +93,10 @@ Hamburguer Icon Classes
   transform: translateY(-8px) rotate(-45deg);
 }
 
+#img-container #img-btn .bar {
+  background-color: #67798e;
+}
+
 /*
 Mobile Menu toggle styles
 */
@@ -71,7 +104,7 @@ Mobile Menu toggle styles
   position: fixed;
   top: 0;
   left: -100%;
-  width: 100vw;
+  width: 100%;
   height: 90%;
   margin-top: 50px;
   background-color: #fff;
@@ -138,6 +171,7 @@ Mobile Menu toggle styles
 }
 
 #main-heading strong {
+  display: block;
   color: #36b37f;
 }
 
@@ -165,6 +199,13 @@ Mobile Menu toggle styles
 /*
 According to linters this should be placed here
 */
+.mobile-pop img {
+  width: 331px;
+  height: 220px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
 .aboutme-card img {
   height: 80px;
   width: 80px;
@@ -265,9 +306,6 @@ Feature 2 Styles Section
   margin: 24px 0;
   color: #fff;
   letter-spacing: 0.03em;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-delay: 0.1s;
 }
 
 .main-button:hover {
@@ -288,6 +326,18 @@ Feature 2 Styles Section
     url('images/aboutme-background2.png');
   background-repeat: no-repeat;
   background-position: top left, top right;
+}
+
+/*
+According to linters this should be placed here
+*/
+.mobile-pop p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px;
+  text-align: left;
 }
 
 #about-me-article p {
@@ -431,6 +481,66 @@ Desktop hidden stuff
 
 #desktop-hr {
   display: none;
+}
+
+/*
+Pop Up windows Styles
+*/
+.bg-container {
+  position: fixed;
+  padding: 20px 16px 26px;
+  height: 100%;
+  background: #c1c7d0;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  overflow: scroll;
+}
+
+.mobile-pop {
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.mobile-pop h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 16px 0;
+  color: #172b4d;
+}
+
+.info-container {
+  display: grid;
+}
+
+.btn-order {
+  margin-bottom: 16px;
+  justify-self: center;
+}
+
+#technologies {
+  justify-content: center;
+}
+
+.btn-order a {
+  margin: 4px;
+  text-decoration: none;
+}
+
+.btn-order button a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#project-pop.show {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 /*
@@ -584,5 +694,77 @@ Desktop Media Query styles
 
   footer {
     display: none;
+  }
+
+  /*
+  Styles for the desktop version of the pop up window
+  */
+  .bg-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .mobile-pop {
+    padding: 78px 20px 44px;
+    align-items: center;
+    width: 920px;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .mobile-pop img {
+    width: 872px;
+    height: 616px;
+    border-radius: 8px;
+    margin: 12px 0;
+  }
+
+  .info-container {
+    align-self: flex-start;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "header btns"
+      "list ."
+      "description description";
+    justify-items: start;
+  }
+
+  #project-title {
+    grid-area: header;
+    justify-self: start;
+  }
+
+  .btn-order {
+    grid-area: btns;
+    align-self: center;
+  }
+
+  #technologies {
+    grid-area: list;
+    justify-self: start;
+  }
+
+  #technologies li:first-child {
+    margin-left: 0;
+  }
+
+  #project-d {
+    grid-area: description;
+    margin-left: 0;
+    margin-top: 36px;
+  }
+
+  /*
+  X button over image Position
+  */
+  #img-container #img-btn {
+    position: absolute;
+    top: -5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ebecf0;
   }
 }
