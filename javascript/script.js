@@ -187,6 +187,52 @@ mainForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (emailValid === true) {
+    localStorage.removeItem('contactFormData');
     mainForm.submit();
   }
+});
+
+/*
+Local Storage
+*/
+
+const fullNameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email-form');
+const textareaInput = document.getElementById('contact-form-text-area');
+
+const contactFormData = {
+  fullName: fullNameInput.value,
+  email: emailInput.value,
+  textarea: textareaInput.value,
+};
+
+const newContactFormData = JSON.parse(localStorage.getItem('contactFormData'));
+if (newContactFormData) {
+  const { fullName, email, textarea } = newContactFormData;
+  fullNameInput.value = fullName;
+  emailInput.value = email;
+  textareaInput.value = textarea;
+} else {
+  localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
+}
+
+function updateLocalStorageItem(itemKey, attributeValue, attributeName) {
+  const item = JSON.parse(localStorage.getItem(itemKey));
+
+  if (item) {
+    item[attributeName] = attributeValue;
+    localStorage.setItem(itemKey, JSON.stringify(item));
+  }
+}
+
+fullNameInput.addEventListener('change', () => {
+  updateLocalStorageItem('contactFormData', fullNameInput.value, 'fullName');
+});
+
+emailInput.addEventListener('change', () => {
+  updateLocalStorageItem('contactFormData', emailInput.value, 'email');
+});
+
+textareaInput.addEventListener('change', () => {
+  updateLocalStorageItem('contactFormData', textareaInput.value, 'textarea');
 });
