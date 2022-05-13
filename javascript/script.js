@@ -162,7 +162,7 @@ function validateEmail (){
     statusMessageEle.remove();
   }
 
-  let regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const regx = /^([a-z0-9\._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   if (regx.test(email)) {
     emailValid = true;
