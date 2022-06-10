@@ -1,17 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton
+# Portfolio
 
-> This is the first skeleton of my portafolio, and it only includes the first two sections of the mobile version of it. 
+> This is the my portafolio, it includes information about me as about the projects I've been developing with Microverse and alone.
 
 
 ## Built With
 
-- HTML & CSS
+- HTML
+- CSS
+- Javascript
 
 ## Live Demo
 
-- Check the live demo of my page here: https://ulisesedu7.github.io/  
+- Check the live demo of my page [here](https://ulisesedu7.github.io/)  
 
 ## Authors
 
