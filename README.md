@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-- Check the live demo of my page [here](https://ulisesedu7.github.io/Portafolio/))  
+- Check the live demo of my page [here](https://ulisesedu7.github.io/Portafolio/)  
 
 ## Authors
 
