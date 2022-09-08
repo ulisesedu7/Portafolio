@@ -3,13 +3,15 @@ Desktop Media Query styles
 */
 @media screen and (min-width: 768px) {
   #first-container {
-    background-image: url('images/Header-llustration-desktop.png');
+    background-image: url('../images/Header-llustration-desktop.png');
     background-repeat: no-repeat;
     background-size: 100%;
   }
 
   .heading-section {
     background-image: none;
+    justify-content: center;
+    align-items: center;
   }
 
   .heading-section p {
@@ -72,8 +74,8 @@ Desktop Media Query styles
     justify-content: center;
     padding-top: 192px;
     background-image:
-      url('images/about-me-desktop-bg2.png'),
-      url('images/about-me-desktop-bg1.png');
+      url('../images/about-me-desktop-bg2.png'),
+      url('../images/about-me-desktop-bg1.png');
     background-repeat: no-repeat;
     background-position: top 380px left, top 50px right;
   }
@@ -94,9 +96,9 @@ Desktop Media Query styles
   #form-section {
     flex-direction: row;
     background-image:
-      url('images/form-bg1.png'),
-      url('images/form-bg2.png'),
-      url('images/form-bg3.png');
+      url('../images/form-bg1.png'),
+      url('../images/form-bg2.png'),
+      url('../images/form-bg3.png');
     background-position: bottom -50px left, bottom right, bottom left 20rem;
     background-repeat: no-repeat;
     padding: 6.5rem;
