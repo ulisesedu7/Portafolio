@@ -230,6 +230,16 @@ Feature 2 Styles Section
   text-align: center;
   row-gap: 24px;
   justify-items: center;
+  align-items: center;
+}
+
+#cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  justify-items: center;
+  column-gap: 1.25rem;
+  row-gap: 0.75rem;
+  width: 100%;
 }
 
 .headings-2 {

@@ -47,23 +47,6 @@ Desktop Media Query styles
     margin: 24px 0;
   }
 
-  .works-section {
-    grid-template-columns: 33% 33% 33%;
-    grid-template-areas:
-      'arrow arrow arrow'
-      'header1 header1 header1';
-    align-items: center;
-    justify-content: center;
-  }
-
-  #arrow-btn {
-    grid-area: arrow;
-  }
-
-  .title-card {
-    grid-area: header1;
-  }
-
   #about-me-article {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
