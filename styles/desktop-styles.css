@@ -64,12 +64,14 @@ Desktop Media Query styles
       url('../images/form-bg3.png');
     background-position: bottom -50px left, bottom right, bottom left 20rem;
     background-repeat: no-repeat;
-    padding: 6.5rem;
+
+    /* padding: 6.5rem; */
   }
 
-  #form-section h2 {
+  #form-section h3 {
     font-size: 30px;
     order: 0;
+    padding: 2rem;
   }
 
   .desktop-input {
@@ -79,16 +81,19 @@ Desktop Media Query styles
   #main-form {
     position: relative;
     order: 0;
+    width: 100%;
   }
 
   #main-form input {
-    width: 684px;
+    width: 39rem;
     height: 48px;
+
+    /* max-width: max-content; */
   }
 
   #main-form textarea {
     height: 114px;
-    width: 684px;
+    width: 39rem;
   }
 
   #form-btn {
@@ -96,7 +101,7 @@ Desktop Media Query styles
   }
 
   #status-message {
-    width: 684px;
+    width: 39rem;
   }
 
   #icons-form-mobile {
