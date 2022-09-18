@@ -48,32 +48,12 @@ Desktop Media Query styles
   }
 
   #about-me-article {
-    grid-template-columns: 33% 33% 33%;
-    grid-template-areas:
-      'h2 h2 h2'
-      'articlep articlep articlep'
-      'btn btn btn';
-    align-items: center;
-    justify-content: center;
     padding-top: 192px;
     background-image:
       url('../images/about-me-desktop-bg2.png'),
       url('../images/about-me-desktop-bg1.png');
     background-repeat: no-repeat;
     background-position: top 380px left, top 50px right;
-  }
-
-  #about-me-article h2 {
-    grid-area: h2;
-  }
-
-  #about-me-article p {
-    grid-area: articlep;
-    padding: 0 15rem;
-  }
-
-  #about-me-article button {
-    grid-area: btn;
   }
 
   #form-section {
