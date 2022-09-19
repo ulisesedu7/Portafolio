@@ -64,8 +64,7 @@ Desktop Media Query styles
       url('../images/form-bg3.png');
     background-position: bottom -50px left, bottom right, bottom left 20rem;
     background-repeat: no-repeat;
-
-    /* padding: 6.5rem; */
+    padding: 4.5rem 1.5rem;
   }
 
   #form-section h3 {
@@ -85,15 +84,13 @@ Desktop Media Query styles
   }
 
   #main-form input {
-    width: 39rem;
+    width: 100%;
     height: 48px;
-
-    /* max-width: max-content; */
   }
 
   #main-form textarea {
+    width: 100%;
     height: 114px;
-    width: 39rem;
   }
 
   #form-btn {
