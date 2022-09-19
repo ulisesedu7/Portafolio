@@ -60,7 +60,7 @@ function genProjectMarkup(projectName, technologies, projectId) {
 
 const projectsMarkUp = projectInfo.reduce((acc, { id, projectName, technologies }) => `${acc}${genProjectMarkup(projectName, technologies, id)}`, '');
 
-const workSection = document.getElementById('portafolio');
+const workSection = document.getElementById('cards-section');
 
 workSection.insertAdjacentHTML('beforeend', projectsMarkUp);
 

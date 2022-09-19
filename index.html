@@ -7,10 +7,11 @@
     <title>Portafolio</title>
 
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/mobile-styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/desktop-styles.css" />
 
     <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/ac283abb78.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/ac283abb78.js" crossorigin="anonymous"></script> -->
 
   </head>
   <body>
@@ -47,7 +48,7 @@
       <section class="heading-section display-flex">
         <h1 id="main-heading">Hey there. I'm Ulises<strong>I'm a Software Developer</strong></h1>
         
-        <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+        <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
 
         <ul id="icons-div" class="display-flex">
           <li><a><img src="images/twitter.png" alt="twitter icon" /></a></li>
@@ -67,6 +68,9 @@
         <hr id="border-line"/>
       </div>
 
+      <section id="cards-section">
+
+      </section>
     </section>
 
     <article id="project-pop" class="bg-container">
@@ -75,47 +79,49 @@
     
     <article id="about-me-article">
       <h2 class="headings-2">About Me</h2>
-      <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+      <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
       <button type="button" class="main-button">Get My Resume</button>
 
-      <section class="aboutme-card display-flex">
-        <img src="images/icon-languages.png" alt="circle language icon" />
-        <h4>Languages</h4>
-        <ul class="display-flex">
-          <li class="card-list-item">Javascript</li>
-          <li class="card-list-item">Ruby</li>
-          <li class="card-list-item">HTML</li>
-          <li class="card-list-item">CSS</li>
-        </ul>
-      </section>
-
-      <section class="aboutme-card display-flex">
-        <img src="images/icon-frameworks.png" alt="little squares icon" />
-        <h4>Frameworks</h4>
-        <ul class="display-flex">
-          <li class="card-list-item">Bootstrap</li>
-          <li class="card-list-item">Ruby on Rails</li>
-          <li class="card-list-item">RSpec</li>
-          <li class="card-list-item">Capybara</li>
-          <li class="card-list-item">Selenium</li>
-        </ul>
-      </section>
-
-      <section class="aboutme-card display-flex">
-        <img src="images/icon-skills.png" alt="little thunder icon" />
-        <h4>Skills</h4>
-        <ul class="display-flex">
-          <li class="card-list-item">Codekit</li>
-          <li class="card-list-item">GitHub</li>
-          <li class="card-list-item">Gitlab</li>
-          <li class="card-list-item">Codepen</li>
-          <li class="card-list-item">Terminal</li>
-        </ul>
-      </section>
+      <div class="aboutme-cards-container">
+        <section class="aboutme-card display-flex">
+          <img src="images/icon-languages.png" alt="circle language icon" />
+          <h4>Languages</h4>
+          <ul class="display-flex">
+            <li class="card-list-item">Javascript</li>
+            <li class="card-list-item">Ruby</li>
+            <li class="card-list-item">HTML</li>
+            <li class="card-list-item">CSS</li>
+          </ul>
+        </section>
+  
+        <section class="aboutme-card display-flex">
+          <img src="images/icon-frameworks.png" alt="little squares icon" />
+          <h4>Frameworks</h4>
+          <ul class="display-flex">
+            <li class="card-list-item">Bootstrap</li>
+            <li class="card-list-item">Ruby on Rails</li>
+            <li class="card-list-item">RSpec</li>
+            <li class="card-list-item">Capybara</li>
+            <li class="card-list-item">Selenium</li>
+          </ul>
+        </section>
+  
+        <section class="aboutme-card display-flex">
+          <img src="images/icon-skills.png" alt="little thunder icon" />
+          <h4>Skills</h4>
+          <ul class="display-flex">
+            <li class="card-list-item">Codekit</li>
+            <li class="card-list-item">GitHub</li>
+            <li class="card-list-item">Gitlab</li>
+            <li class="card-list-item">Codepen</li>
+            <li class="card-list-item">Terminal</li>
+          </ul>
+        </section>
+      </div>
     </article>
 
     <section id="form-section" class="display-flex">
-      <h2 class="headings-2">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      <h3 id="form-heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
 
       <form id="main-form" class="display-flex" action="https://formspree.io/f/mrgjoqeg" method="post">
         <input
