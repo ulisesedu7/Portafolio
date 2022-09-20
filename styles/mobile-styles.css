@@ -250,12 +250,18 @@ Feature 2 Styles Section
   margin: 24px 0;
 }
 
+.title-card {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #border-line {
   width: 48px;
   height: 4px;
   background: #36b37e;
   border-radius: 24px;
-  margin: 24px auto;
+  margin: 24px 0;
 }
 
 .work-card {
