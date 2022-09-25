@@ -4,7 +4,7 @@ JS Object Data
 import projectInfo from './data.js';
 
 /*
-Hamburguer Menu constants
+Hamburger Menu constants
 */
 const hamburger = document.querySelector('#nav-bar-btn');
 const navMenu = document.querySelector('.mobile-menu');
@@ -12,7 +12,7 @@ const mainLogo = document.querySelector('#main-logo');
 const headerB = document.querySelector('#mobile-header');
 
 /*
-Open Hamburguer menu when the icon is clicked
+Open Hamburger menu when the icon is clicked
 */
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');

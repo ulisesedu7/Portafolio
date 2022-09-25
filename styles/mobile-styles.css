@@ -213,10 +213,16 @@ According to linters this should be placed here
   margin: 40px auto;
 }
 
-#icons-div img {
+#icons-div a {
   padding: 1rem;
   background-color: transparent;
+  cursor: pointer;
 }
+
+#icons-div a:link,
+#icons-div a:visited {
+  color: black;
+} 
 
 /*
 Feature 2 Styles Section
@@ -491,10 +497,18 @@ Feature 3 Styles
   margin-top: 46px;
 }
 
-#icons-form-mobile img,
-#icons-form-desktop img {
+#icons-form-mobile a,
+#icons-form-desktop a {
+  cursor: pointer;
   padding: 20px;
   background-color: transparent;
+}
+
+#icons-form-mobile a:link,
+#icons-form-mobile a:visited,
+#icons-form-desktop a:link,
+#icons-form-desktop a:visited {
+  color: black;
 }
 
 footer {
