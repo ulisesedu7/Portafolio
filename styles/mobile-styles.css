@@ -1,12 +1,15 @@
 /*
 Feature 1 Styles Section
 */
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .header-b {
@@ -151,7 +154,7 @@ Mobile Menu toggle styles
 .heading-section {
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   background-image: url('../images/header-illsutration-mobile@2x.png');
   background-repeat: no-repeat;
@@ -166,14 +169,14 @@ Mobile Menu toggle styles
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: #D4D4F2;
   margin: 58px 0;
   order: 0;
 }
 
 #main-heading strong {
   display: block;
-  color: #36b37f;
+  color: #fff;
 }
 
 .heading-section p {
@@ -221,7 +224,7 @@ According to linters this should be placed here
 
 #icons-div a:link,
 #icons-div a:visited {
-  color: black;
+  color: #fff;
 } 
 
 /*
@@ -229,6 +232,12 @@ Feature 2 Styles Section
 */
 #arrow-btn {
   padding: 8px;
+  order: 3;
+  cursor: pointer;
+}
+
+#arrow-btn:link, #arrow-btn:visited {
+  color: #fff;
 }
 
 .works-section {
@@ -237,6 +246,7 @@ Feature 2 Styles Section
   row-gap: 24px;
   justify-items: center;
   align-items: center;
+  margin-top: 2.5rem;
 }
 
 #cards-section {

@@ -3,7 +3,7 @@ Desktop Media Query styles
 */
 @media screen and (min-width: 768px) {
   #first-container {
-    background-image: url('../images/Header-llustration-desktop.png');
+    background-image: url('../images/portafolio-dk-bg.png');
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -15,8 +15,10 @@ Desktop Media Query styles
   }
 
   .heading-section p {
+    font-size: 1.375rem;
     padding: 0 17rem;
-    line-height: 32px;
+    line-height: 2rem;
+    color: #fff;
   }
 
   #mobile-header {
@@ -25,6 +27,8 @@ Desktop Media Query styles
 
   #desktop-header {
     display: block;
+    background-color: #01162C;
+    padding: 0.8rem 0;
   }
 
   #desktop-header .nav-list {
@@ -32,28 +36,31 @@ Desktop Media Query styles
   }
 
   #desktop-header .nav-bar-a {
-    font-size: 15px;
-    line-height: 20px;
-    color: #344563;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: #fff;
     margin: 0 10px;
   }
 
   #main-heading {
     font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 4rem;
+    line-height: 3.75rem;
     letter-spacing: 0.37px;
-    color: #172b4d;
     margin: 24px 0;
   }
 
   #about-me-article {
-    padding-top: 192px;
+    padding-top: 6rem;
     background-image:
       url('../images/about-me-desktop-bg2.png'),
       url('../images/about-me-desktop-bg1.png');
     background-repeat: no-repeat;
-    background-position: top 380px left, top 50px right;
+    background-position: top 19rem left, top 0 right;
+  }
+
+  #about-me-article p {
+    padding: 0 12rem;
   }
 
   #form-section {
