@@ -38,7 +38,6 @@ Items with Display Flex
 
 #nav-bar-btn {
   border: none;
-  background-color: #fff;
   cursor: pointer;
 }
 
@@ -47,10 +46,10 @@ Hamburguer Icon Classes
 */
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 32px;
+  height: 4px;
   margin: 5px auto;
-  background-color: #28352f;
+  background-color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -146,9 +145,17 @@ Mobile Menu toggle styles
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352f;
+  color: #fff;
   padding: 10px 12px;
   text-decoration: none;
+}
+
+#first-container {
+  background-image: url('../images/portafolio-mb-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .heading-section {
@@ -156,11 +163,7 @@ Mobile Menu toggle styles
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('../images/header-illsutration-mobile@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
   padding: 64px 24px;
-  height: 600px;
   width: fit-content;
   margin: 0 auto;
 }
@@ -180,7 +183,7 @@ Mobile Menu toggle styles
 }
 
 .heading-section p {
-  color: #172b4d;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
