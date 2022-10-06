@@ -5,7 +5,13 @@ Desktop Media Query styles
   #first-container {
     background-image: url('../images/portafolio-dk-bg.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #mobile-header {
+    display: none;
   }
 
   .heading-section {
@@ -21,9 +27,6 @@ Desktop Media Query styles
     color: #fff;
   }
 
-  #mobile-header {
-    display: none;
-  }
 
   #desktop-header {
     display: block;
@@ -47,16 +50,22 @@ Desktop Media Query styles
     font-size: 4rem;
     line-height: 3.75rem;
     letter-spacing: 0.37px;
+    margin: 1.4rem 0;
+  }
+
+  .headings-2-dk {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
     margin: 24px 0;
   }
 
   #about-me-article {
     padding-top: 6rem;
-    background-image:
-      url('../images/about-me-desktop-bg2.png'),
-      url('../images/about-me-desktop-bg1.png');
+    background-image: url('../images/portafolio-aboutme-bg.png');
     background-repeat: no-repeat;
-    background-position: top 19rem left, top 0 right;
+    background-size: cover;
   }
 
   #about-me-article p {
