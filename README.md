@@ -20,7 +20,7 @@
 👤 **Ulises Largaespada**
 
 - GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
-- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
+- LinkedIn: [Ulises Largaespada](https://www.linkedin.com/in/ulises-largaespada/)
 
 ## Contributors
 

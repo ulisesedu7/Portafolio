@@ -1,16 +1,24 @@
 /*
 Feature 1 Styles Section
 */
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', 'Montserrat', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .header-b {
-  background-color: #fff;
+  background-image:
+    linear-gradient(
+      180deg,
+      #004d52,
+      #63c1bd
+    );
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +43,6 @@ Items with Display Flex
 
 #nav-bar-btn {
   border: none;
-  background-color: #fff;
   cursor: pointer;
 }
 
@@ -44,10 +51,10 @@ Hamburguer Icon Classes
 */
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 32px;
+  height: 4px;
   margin: 5px auto;
-  background-color: #28352f;
+  background-color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -70,7 +77,7 @@ X button over image -placed here due to linters
 }
 
 #img-btn .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
 #img-btn .bar:nth-child(2) {
@@ -78,7 +85,7 @@ X button over image -placed here due to linters
 }
 
 #img-btn .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 #nav-bar-btn.active .bar:nth-child(2) {
@@ -86,11 +93,13 @@ X button over image -placed here due to linters
 }
 
 #nav-bar-btn.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
+  background-color: #67798e;
 }
 
 #nav-bar-btn.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: #67798e;
 }
 
 #img-container #img-btn .bar {
@@ -105,9 +114,9 @@ Mobile Menu toggle styles
   top: 0;
   left: -100%;
   width: 100%;
-  height: 90%;
+  height: 40%;
   margin-top: 50px;
-  background-color: #fff;
+  background-color: #93aeb5;
   transition: 0.3s;
   border-radius: 48px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -125,12 +134,13 @@ Mobile Menu toggle styles
   align-items: flex-start;
 }
 
-.mobile-menu-links a {
+.mobile-menu-links .mobile-link {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: block;
   margin: 20px 20px;
+  color: #172b4d;
 }
 
 /* Is Hidden */
@@ -141,23 +151,27 @@ Mobile Menu toggle styles
 
 .nav-bar-a {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 28px;
-  color: #28352f;
+  color: #fff;
   padding: 10px 12px;
   text-decoration: none;
+}
+
+#first-container {
+  background-image: url('../images/portafolio-mb-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .heading-section {
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  background-image: url('../images/header-illsutration-mobile@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
   padding: 64px 24px;
-  height: 600px;
   width: fit-content;
   margin: 0 auto;
 }
@@ -166,18 +180,18 @@ Mobile Menu toggle styles
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: #d4d4f2;
   margin: 58px 0;
   order: 0;
 }
 
 #main-heading strong {
   display: block;
-  color: #36b37f;
+  color: #fff;
 }
 
 .heading-section p {
-  color: #172b4d;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -188,6 +202,30 @@ Mobile Menu toggle styles
 #main-heading,
 #main-heading strong,
 .heading-section p {
+  background-color: transparent;
+}
+
+.btn-order a {
+  margin: 4px;
+  text-decoration: none;
+}
+
+.btn-order button a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#icons-form-mobile,
+#icons-form-desktop {
+  list-style: none;
+  order: 2;
+  margin-top: 46px;
+}
+
+#icons-form-mobile a,
+#icons-form-desktop a {
+  cursor: pointer;
+  padding: 20px;
   background-color: transparent;
 }
 
@@ -208,21 +246,38 @@ According to linters this should be placed here
 }
 
 .aboutme-card img {
-  height: 80px;
-  width: 80px;
-  margin: 40px auto;
+  width: 35%;
+  height: 35%;
+  margin-top: 1.2rem;
 }
 
-#icons-div img {
+#icons-div a {
   padding: 1rem;
   background-color: transparent;
+  cursor: pointer;
+}
+
+#icons-div a:link,
+#icons-div a:visited {
+  color: #fff;
 }
 
 /*
 Feature 2 Styles Section
 */
-#arrow-btn {
+#mg-arrow-container {
+  justify-content: center;
+}
+
+.arrow-btn {
   padding: 8px;
+  order: 3;
+  cursor: pointer;
+}
+
+.arrow-btn:link,
+.arrow-btn:visited {
+  color: #fff;
 }
 
 .works-section {
@@ -231,6 +286,7 @@ Feature 2 Styles Section
   row-gap: 24px;
   justify-items: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 #cards-section {
@@ -244,10 +300,16 @@ Feature 2 Styles Section
 
 .headings-2 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.525rem;
+  line-height: 3.5rem;
   color: #172b4d;
   margin: 24px 0;
+}
+
+.title-card {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #border-line {
@@ -255,7 +317,7 @@ Feature 2 Styles Section
   height: 4px;
   background: #36b37e;
   border-radius: 24px;
-  margin: 24px auto;
+  margin: 24px 0;
 }
 
 .work-card {
@@ -265,8 +327,8 @@ Feature 2 Styles Section
   border-radius: 8px;
   background-image: url('../images/img-placeholder.png');
   background-repeat: no-repeat;
-  height: 474px;
-  width: 327px;
+  height: 29.625rem;
+  width: 20.45rem;
 }
 
 .work-card-content ul {
@@ -275,7 +337,7 @@ Feature 2 Styles Section
 
 .card-work-item {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.1rem;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
@@ -289,8 +351,10 @@ Feature 2 Styles Section
 }
 
 .work-card-content {
+  justify-content: center;
   align-self: flex-end;
-  height: 252px;
+  height: 15.75rem;
+  width: 100%;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -299,15 +363,15 @@ Feature 2 Styles Section
 
 .work-card h3 {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.75rem;
+  line-height: 2rem;
   margin: 16px 0;
   color: #3a4a42;
 }
 
 .main-button {
-  background-color: #36b37f;
-  border-color: #36b37f;
+  background-color: #172b4d;
+  border-color: #172b4d;
   border-radius: 4px;
   border-style: none;
   padding: 12px;
@@ -333,11 +397,19 @@ Feature 2 Styles Section
   row-gap: 24px;
   justify-items: center;
   align-items: center;
-  background-image:
-    url('../images/aboutme-background.png'),
-    url('../images/aboutme-background2.png');
+  background-image: url('../images/portafolio-aboutme-mb-bg.png');
   background-repeat: no-repeat;
-  background-position: top left, top right;
+  background-size: cover;
+  margin-top: 1.75rem;
+  padding: 2.32rem 0;
+}
+
+#about-me-article h2 {
+  color: #fff;
+}
+
+.about-btn {
+  background-color: #37537d;
 }
 
 .aboutme-cards-container {
@@ -365,27 +437,28 @@ According to linters this should be placed here
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  color: #42526e;
+  color: #fff;
   margin: 24px;
 }
 
 .aboutme-card {
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   box-sizing: border-box;
-  height: 352px;
-  width: 327px;
+  height: 22rem;
+  width: 20.5rem;
 }
 
 .aboutme-card h4 {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 2rem;
   color: #344563;
-  margin: 24px 0;
+  margin: 1rem 0;
 }
 
 .aboutme-card ul {
@@ -396,8 +469,8 @@ According to linters this should be placed here
 
 .card-list-item {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.1rem;
+  line-height: 1rem;
   letter-spacing: 0.03em;
   color: #36b37e;
   padding: 12px;
@@ -418,7 +491,7 @@ Feature 3 Styles
   text-align: center;
   background: url('../images/form-background.png');
   background-repeat: no-repeat;
-  background-position: bottom 50px right;
+  background-position: top 6.92rem right;
   padding: 64px 24px 0;
 }
 
@@ -478,17 +551,11 @@ Feature 3 Styles
   width: fit-content;
 }
 
-#icons-form-mobile,
-#icons-form-desktop {
-  list-style: none;
-  order: 2;
-  margin-top: 46px;
-}
-
-#icons-form-mobile img,
-#icons-form-desktop img {
-  padding: 20px;
-  background-color: transparent;
+#icons-form-mobile a:link,
+#icons-form-mobile a:visited,
+#icons-form-desktop a:link,
+#icons-form-desktop a:visited {
+  color: black;
 }
 
 footer {
@@ -560,16 +627,6 @@ Pop Up windows Styles
 
 #technologies {
   justify-content: center;
-}
-
-.btn-order a {
-  margin: 4px;
-  text-decoration: none;
-}
-
-.btn-order button a:visited {
-  text-decoration: none;
-  color: #fff;
 }
 
 #project-pop.show {
