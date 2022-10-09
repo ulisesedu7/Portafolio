@@ -13,8 +13,12 @@ body {
 }
 
 .header-b {
-  background-image: linear-gradient(180deg, #004d52
-  , #63c1bd);
+  background-image:
+    linear-gradient(
+      180deg,
+      #004d52,
+      #63c1bd
+    );
   position: fixed;
   top: 0;
   left: 0;
@@ -136,7 +140,7 @@ Mobile Menu toggle styles
   line-height: 44px;
   display: block;
   margin: 20px 20px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 /* Is Hidden */
@@ -176,7 +180,7 @@ Mobile Menu toggle styles
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #D4D4F2;
+  color: #d4d4f2;
   margin: 58px 0;
   order: 0;
 }
@@ -198,6 +202,30 @@ Mobile Menu toggle styles
 #main-heading,
 #main-heading strong,
 .heading-section p {
+  background-color: transparent;
+}
+
+.btn-order a {
+  margin: 4px;
+  text-decoration: none;
+}
+
+.btn-order button a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#icons-form-mobile,
+#icons-form-desktop {
+  list-style: none;
+  order: 2;
+  margin-top: 46px;
+}
+
+#icons-form-mobile a,
+#icons-form-desktop a {
+  cursor: pointer;
+  padding: 20px;
   background-color: transparent;
 }
 
@@ -232,7 +260,7 @@ According to linters this should be placed here
 #icons-div a:link,
 #icons-div a:visited {
   color: #fff;
-} 
+}
 
 /*
 Feature 2 Styles Section
@@ -247,7 +275,8 @@ Feature 2 Styles Section
   cursor: pointer;
 }
 
-.arrow-btn:link, .arrow-btn:visited {
+.arrow-btn:link,
+.arrow-btn:visited {
   color: #fff;
 }
 
@@ -341,8 +370,8 @@ Feature 2 Styles Section
 }
 
 .main-button {
-  background-color: #172B4D;
-  border-color: #172B4D;
+  background-color: #172b4d;
+  border-color: #172b4d;
   border-radius: 4px;
   border-style: none;
   padding: 12px;
@@ -522,20 +551,6 @@ Feature 3 Styles
   width: fit-content;
 }
 
-#icons-form-mobile,
-#icons-form-desktop {
-  list-style: none;
-  order: 2;
-  margin-top: 46px;
-}
-
-#icons-form-mobile a,
-#icons-form-desktop a {
-  cursor: pointer;
-  padding: 20px;
-  background-color: transparent;
-}
-
 #icons-form-mobile a:link,
 #icons-form-mobile a:visited,
 #icons-form-desktop a:link,
@@ -612,16 +627,6 @@ Pop Up windows Styles
 
 #technologies {
   justify-content: center;
-}
-
-.btn-order a {
-  margin: 4px;
-  text-decoration: none;
-}
-
-.btn-order button a:visited {
-  text-decoration: none;
-  color: #fff;
 }
 
 #project-pop.show {
