@@ -53,16 +53,8 @@ Desktop Media Query styles
     margin: 1.4rem 0;
   }
 
-  .headings-2-dk {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172b4d;
-    margin: 24px 0;
-  }
-
   #about-me-article {
-    padding-top: 6rem;
+    padding: 6rem 0;
     background-image: url('../images/portafolio-aboutme-bg.png');
     background-repeat: no-repeat;
     background-size: cover;

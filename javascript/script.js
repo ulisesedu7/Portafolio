@@ -48,13 +48,14 @@ function genProjectTechMarkUp(technologies) {
 
 function genProjectMarkup(projectName, technologies, projectId) {
   const technologiesMarkUp = genProjectTechMarkUp(technologies);
-  const projectMarkUp = `<div class="work-card display-flex">
-  <div class="work-card-content">
-    <h3>${projectName}</h3>
-    ${technologiesMarkUp}
-    <button type="button" class="main-button project-btn" id=${projectId}>See Project</button>
-  </div>
-</div>`;
+  const projectMarkUp = `
+    <div class="work-card display-flex">
+      <div class="work-card-content">
+        <h3>${projectName}</h3>
+        ${technologiesMarkUp}
+        <button type="button" class="main-button project-btn" id=${projectId}>See Project</button>
+      </div>
+    </div>`;
   return projectMarkUp;
 }
 
