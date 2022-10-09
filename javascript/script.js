@@ -36,7 +36,7 @@ Create HTML dynamically
 */
 function genProjectTechMarkUp(technologies) {
   const projectTechsListMarkup = `
-    <ul class="display-flex">
+    <ul class="display-flex technologies-card">
       ${technologies.reduce(
     (acc, tech) => `${acc}<li class="card-work-item">${tech}</li>`,
     '',

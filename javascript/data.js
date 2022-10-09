@@ -1,11 +1,11 @@
 const projectInfo = [{
   id: 0,
   featureImg: 'images/project-img1.svg',
-  projectName: 'Project 1',
-  technologies: ['Ruby on Rails', 'CSS', 'HTML', 'Javascript'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum',
-  liveBtn: 'https://google.com',
-  sourceBtn: 'https://google.com',
+  projectName: 'Space Travelers',
+  technologies: ['HTML', 'SCSS', 'React', 'Redux', 'Javascript'],
+  description: 'The Space-Travelers app is a single-page-app that gets information from the SpaceX API and shows you a list with some of their rockets and missions for you to reserve, join and watch at your profile page.',
+  liveBtn: 'https://salty-coast-56792.herokuapp.com/',
+  sourceBtn: 'https://github.com/ulisesedu7/microverse-space-travelers',
 },
 {
   id: 1,
