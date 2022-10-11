@@ -1,8 +1,8 @@
 const projectInfo = [{
   id: 0,
-  featureImg: 'images/project-img1.svg',
+  featureImg: 'images/project-img1.png',
   projectName: 'Space Travelers',
-  technologies: ['HTML', 'SCSS', 'React', 'Redux', 'Javascript'],
+  technologies: ['HTML', 'SCSS', 'React & Redux', 'Javascript'],
   description: 'The Space-Travelers app is a single-page-app that gets information from the SpaceX API and shows you a list with some of their rockets and missions for you to reserve, join and watch at your profile page.',
   liveBtn: 'https://salty-coast-56792.herokuapp.com/',
   sourceBtn: 'https://github.com/ulisesedu7/microverse-space-travelers',

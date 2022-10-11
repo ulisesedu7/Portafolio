@@ -46,10 +46,11 @@ function genProjectTechMarkUp(technologies) {
   return projectTechsListMarkup;
 }
 
-function genProjectMarkup(projectName, technologies, projectId) {
+function genProjectMarkup(featureImg, projectName, technologies, projectId) {
   const technologiesMarkUp = genProjectTechMarkUp(technologies);
   const projectMarkUp = `
     <div class="work-card display-flex">
+      <img src=${featureImg} alt="image of the project" class="project-img">
       <div class="work-card-content">
         <h3>${projectName}</h3>
         ${technologiesMarkUp}
@@ -59,7 +60,12 @@ function genProjectMarkup(projectName, technologies, projectId) {
   return projectMarkUp;
 }
 
-const projectsMarkUp = projectInfo.reduce((acc, { id, projectName, technologies }) => `${acc}${genProjectMarkup(projectName, technologies, id)}`, '');
+const projectsMarkUp = projectInfo.reduce((acc, {
+  id,
+  projectName,
+  technologies,
+  featureImg,
+}) => `${acc}${genProjectMarkup(featureImg, projectName, technologies, id)}`, '');
 
 const workSection = document.getElementById('cards-section');
 
@@ -78,7 +84,7 @@ function genProjectPopUpMarkUp(
 ) {
   const projectPopUpMarkUp = `<div class="mobile-pop display-flex" id="popUp">
   <div id="img-container">
-    <img src=${featureImg} alt="image of the project" id="project-img">
+    <img src=${featureImg} alt="image of the project" class="project-img">
     <div id="img-btn">
       <span class="bar"></span>
       <span class="bar"></span>

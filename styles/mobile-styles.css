@@ -238,7 +238,7 @@ Mobile Menu toggle styles
 /*
 According to linters this should be placed here
 */
-.mobile-pop img {
+.project-img {
   width: 331px;
   height: 220px;
   border-radius: 8px;
@@ -321,13 +321,12 @@ Feature 2 Styles Section
 }
 
 .work-card {
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  background-image: url('../images/img-placeholder.png');
-  background-repeat: no-repeat;
-  height: 29.625rem;
+  height: 32rem;
   width: 20.45rem;
 }
 
