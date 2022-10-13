@@ -239,8 +239,8 @@ Mobile Menu toggle styles
 According to linters this should be placed here
 */
 .project-img {
-  width: 331px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   margin: 12px 0;
 }
@@ -292,7 +292,7 @@ Feature 2 Styles Section
 #cards-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-  grid-auto-rows: 29.8rem;
+  grid-auto-rows: 33rem;
   justify-items: center;
   row-gap: 1.75rem;
   width: 90%;
@@ -326,7 +326,7 @@ Feature 2 Styles Section
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  height: 32rem;
+  height: 33rem;
   width: 20.45rem;
 }
 
@@ -337,7 +337,7 @@ Feature 2 Styles Section
 
 .card-work-item {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
@@ -354,11 +354,10 @@ Feature 2 Styles Section
   justify-content: center;
   align-self: flex-end;
   height: 15.75rem;
-  width: 100%;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 .work-card h3 {
