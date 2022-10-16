@@ -286,7 +286,8 @@ Feature 2 Styles Section
   row-gap: 24px;
   justify-items: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0;
+  max-width: 100rem;
 }
 
 #cards-section {
@@ -322,12 +323,18 @@ Feature 2 Styles Section
 
 .work-card {
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   height: 33rem;
   width: 20.45rem;
+}
+
+.work-card-img-container {
+  width: 100%;
+  height: 50%;
 }
 
 .technologies-card {
@@ -351,13 +358,17 @@ Feature 2 Styles Section
 }
 
 .work-card-content {
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-self: flex-end;
   height: 15.75rem;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
-  /* padding: 16px; */
+  width: fit-content;
+  height: 50%;
+  margin: 0 auto;
 }
 
 .work-card h3 {
@@ -399,7 +410,7 @@ Feature 2 Styles Section
   background-image: url('../images/portafolio-aboutme-mb-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 1.75rem;
+  margin: 1.75rem auto 0;
   padding: 2.32rem 0;
 }
 
@@ -417,7 +428,7 @@ Feature 2 Styles Section
   grid-auto-rows: 26rem;
   justify-items: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
 }
 
 /*

@@ -50,8 +50,10 @@ function genProjectMarkup(featureImg, projectName, technologies, projectId) {
   const technologiesMarkUp = genProjectTechMarkUp(technologies);
   const projectMarkUp = `
     <div class="work-card display-flex">
-      <img src=${featureImg} alt="image of the project" class="project-img">
-      <div class="work-card-content">
+      <div class="work-card-img-container">
+        <img src=${featureImg} alt="image of the project" class="project-img">
+      </div>
+      <div class="work-card-content display-flex">
         <h3>${projectName}</h3>
         ${technologiesMarkUp}
         <button type="button" class="main-button project-btn" id=${projectId}>See Project</button>

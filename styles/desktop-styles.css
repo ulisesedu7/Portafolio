@@ -52,6 +52,10 @@ Desktop Media Query styles
     margin: 1.4rem 0;
   }
 
+  .card-work-item {
+    font-size: 1.3rem;
+  }
+
   #about-me-article {
     padding: 6rem 0;
     background-image: url('../images/portafolio-aboutme-bg.png');

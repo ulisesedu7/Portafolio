@@ -9,12 +9,12 @@ const projectInfo = [{
 },
 {
   id: 1,
-  featureImg: 'images/project-img2.svg',
-  projectName: 'Project 2',
-  technologies: ['Ruby on Rails', 'CSS', 'HTML', 'Javascript'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsumg',
-  liveBtn: 'https://youtube.com',
-  sourceBtn: 'https://youtube.com',
+  featureImg: 'images/project-img2.png',
+  projectName: 'Math Magicians',
+  technologies: ['HTML', 'CSS', 'Javascript', 'React'],
+  description: 'This small web application built with React.js helps you with small calculations, a simple calculator that proves just how powerful and easy can React be when creating single-page-apps.',
+  liveBtn: 'https://mysterious-bayou-66250.herokuapp.com/',
+  sourceBtn: 'https://github.com/ulisesedu7/Math-Magicians',
 },
 {
   id: 2,
