@@ -207,6 +207,7 @@ Mobile Menu toggle styles
 .btn-order a {
   margin: 4px;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .btn-order button a:visited {
@@ -360,7 +361,6 @@ Feature 2 Styles Section
   justify-content: center;
   align-items: center;
   align-self: flex-end;
-  height: 15.75rem;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -635,10 +635,6 @@ Pop Up windows Styles
 .btn-order {
   margin-bottom: 16px;
   justify-self: center;
-}
-
-.btn-order a {
-  font-size: 1.3rem;
 }
 
 #project-pop.show {
