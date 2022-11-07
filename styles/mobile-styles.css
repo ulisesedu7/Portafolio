@@ -169,10 +169,11 @@ Mobile Menu toggle styles
 .heading-section {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  padding: 64px 24px;
+  padding: 4rem 1.5rem;
   width: fit-content;
+  height: 70vh;
   margin: 0 auto;
 }
 
@@ -181,7 +182,6 @@ Mobile Menu toggle styles
   font-size: 40px;
   line-height: 52px;
   color: #d4d4f2;
-  margin: 58px 0;
   order: 0;
 }
 
@@ -195,7 +195,6 @@ Mobile Menu toggle styles
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  margin: 58px 0;
   order: 1;
 }
 
@@ -232,7 +231,6 @@ Mobile Menu toggle styles
 #icons-div {
   list-style: none;
   order: 2;
-  margin: 58px 0;
 }
 
 /*

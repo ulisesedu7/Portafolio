@@ -16,7 +16,7 @@ Desktop Media Query styles
 
   .heading-section {
     background-image: none;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
