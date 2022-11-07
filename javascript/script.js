@@ -36,7 +36,7 @@ Create HTML dynamically
 */
 function genProjectTechMarkUp(technologies) {
   const projectTechsListMarkup = `
-    <ul class="display-flex">
+    <ul class="display-flex technologies-card">
       ${technologies.reduce(
     (acc, tech) => `${acc}<li class="card-work-item">${tech}</li>`,
     '',
@@ -46,11 +46,14 @@ function genProjectTechMarkUp(technologies) {
   return projectTechsListMarkup;
 }
 
-function genProjectMarkup(projectName, technologies, projectId) {
+function genProjectMarkup(featureImg, projectName, technologies, projectId) {
   const technologiesMarkUp = genProjectTechMarkUp(technologies);
   const projectMarkUp = `
     <div class="work-card display-flex">
-      <div class="work-card-content">
+      <div class="work-card-img-container">
+        <img src=${featureImg} alt="image of the project" class="project-img">
+      </div>
+      <div class="work-card-content display-flex">
         <h3>${projectName}</h3>
         ${technologiesMarkUp}
         <button type="button" class="main-button project-btn" id=${projectId}>See Project</button>
@@ -59,7 +62,12 @@ function genProjectMarkup(projectName, technologies, projectId) {
   return projectMarkUp;
 }
 
-const projectsMarkUp = projectInfo.reduce((acc, { id, projectName, technologies }) => `${acc}${genProjectMarkup(projectName, technologies, id)}`, '');
+const projectsMarkUp = projectInfo.reduce((acc, {
+  id,
+  projectName,
+  technologies,
+  featureImg,
+}) => `${acc}${genProjectMarkup(featureImg, projectName, technologies, id)}`, '');
 
 const workSection = document.getElementById('cards-section');
 
@@ -70,6 +78,7 @@ Create pop up automatically
 */
 function genProjectPopUpMarkUp(
   featureImg,
+  projectId,
   projectName,
   technologies,
   description,
@@ -78,7 +87,7 @@ function genProjectPopUpMarkUp(
 ) {
   const projectPopUpMarkUp = `<div class="mobile-pop display-flex" id="popUp">
   <div id="img-container">
-    <img src=${featureImg} alt="image of the project" id="project-img">
+    <img src=${featureImg} alt="image of the project" class="project-img" id="img-${projectId}">
     <div id="img-btn">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -110,11 +119,12 @@ const btnOpen = document.querySelectorAll('.project-btn');
 btnOpen.forEach((n) => n.addEventListener('click', () => {
   const { id } = n;
   const {
-    featureImg, projectName, technologies, description, liveBtn, sourceBtn,
+    featureImg, projectId, projectName, technologies, description, liveBtn, sourceBtn,
   } = projectInfo[id];
 
   const projectPopUpMarkUp = genProjectPopUpMarkUp(
     featureImg,
+    projectId,
     projectName,
     technologies,
     description,
