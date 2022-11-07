@@ -78,6 +78,7 @@ Create pop up automatically
 */
 function genProjectPopUpMarkUp(
   featureImg,
+  projectId,
   projectName,
   technologies,
   description,
@@ -86,7 +87,7 @@ function genProjectPopUpMarkUp(
 ) {
   const projectPopUpMarkUp = `<div class="mobile-pop display-flex" id="popUp">
   <div id="img-container">
-    <img src=${featureImg} alt="image of the project" class="project-img">
+    <img src=${featureImg} alt="image of the project" class="project-img" id="img-${projectId}">
     <div id="img-btn">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -118,11 +119,12 @@ const btnOpen = document.querySelectorAll('.project-btn');
 btnOpen.forEach((n) => n.addEventListener('click', () => {
   const { id } = n;
   const {
-    featureImg, projectName, technologies, description, liveBtn, sourceBtn,
+    featureImg, projectId, projectName, technologies, description, liveBtn, sourceBtn,
   } = projectInfo[id];
 
   const projectPopUpMarkUp = genProjectPopUpMarkUp(
     featureImg,
+    projectId,
     projectName,
     technologies,
     description,
